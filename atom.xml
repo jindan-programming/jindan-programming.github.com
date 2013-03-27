@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[金丹的程序之路]]></title>
+  <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
+  <link href="http://jindan-programming.github.com/"/>
+  <updated>2013-03-27T23:55:51+08:00</updated>
+  <id>http://jindan-programming.github.com/</id>
+  <author>
+    <name><![CDATA[jindan and BF]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[开始计划]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/03/27/kai-shi-ji-hua/"/>
+    <updated>2013-03-27T23:47:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/03/27/kai-shi-ji-hua</id>
+    <content type="html"><![CDATA[<p>今天女友正式决定开始学习程序。为了督促她能够坚持下去，也为了做一个记录，我建立了这个博客：金丹的程序之路。</p>
+
+<p>今天主要跟她讲了一下程序是什么？程序可以干什么？程序有哪些分类？然后一起讨论了下之后的学习计划：我帮她制定目标和计划，负责考察，提供资料。主要靠她自学为主，教学为辅。</p>
+
+<p>另外，我还罗列了程序的一个知识体系和关联知识。</p>
+
+<p>Anyway，
+一切都刚刚起步，我没有教学经验，她没有程序经验，事事都需要摸索。但是，万事开头难。let&#8217;s
+go go go ！</p>
+]]></content>
+  </entry>
+  
+</feed>
