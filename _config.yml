@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://jindan-programming.github.com
+title: 金丹的程序之路
+subtitle: Web 开发
+author: jindan and BF
 simple_search: http://google.com/search
 description:
 
