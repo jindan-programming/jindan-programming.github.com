@@ -24,6 +24,7 @@ GEM
     liquid (2.3.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
+    nokogiri (1.5.9)
     posix-spawn (0.3.6)
     pygments.rb (0.3.7)
       posix-spawn (~> 0.3.6)
@@ -34,7 +35,10 @@ GEM
     rake (0.9.2.2)
     rb-fsevent (0.9.1)
     rdiscount (1.6.8)
+    ruby-pinyin (0.1.0)
     rubypants (0.2.0)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
     sass (3.1.20)
     sass-globbing (1.0.0)
       sass (>= 3.1)
@@ -61,7 +65,9 @@ DEPENDENCIES
   rake (~> 0.9)
   rb-fsevent (~> 0.9)
   rdiscount (~> 1.6.8)
+  ruby-pinyin
   rubypants (~> 0.2.0)
+  sanitize
   sass-globbing (~> 1.0.0)
   sinatra (~> 1.3.5)
   stringex (~> 1.4.0)

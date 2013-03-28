@@ -1,10 +1,34 @@
 require 'bundler/setup'
 require 'sinatra/base'
+require 'sanitize'
+require 'ruby-pinyin'
 
 # The project root directory
 $root = ::File.dirname(__FILE__)
 
 class SinatraStaticServer < Sinatra::Base
+
+  get '/admin' do
+    erb :index
+  end
+
+  post '/admin' do
+    return 'error' if params[:title] == "" || params[:content] == ""
+    title = PinYin.permlink(params[:title])
+    File.open("#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown", 'w') do |file|
+      file.puts "---"
+      file.puts "layout: post"
+      file.puts "title: #{params[:title]}"
+      file.puts "---"
+      file.puts ""
+
+      lines = Sanitize.clean(params[:content], elements: ['br']).split("<br>")
+      lines.each do |line|
+        file.puts line
+      end
+    end
+    "update_success"
+  end
 
   get(/.+/) do
     send_sinatra_file(request.path) {404}
