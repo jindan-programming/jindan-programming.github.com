@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-03-29T00:12:01+08:00</updated>
+  <updated>2013-03-29T23:20:49+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[html学习]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/03/29/htmlxue-xi/"/>
+    <updated>2013-03-29T23:12:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/03/29/htmlxue-xi</id>
+    <content type="html"><![CDATA[<p>今天我状态不好，所以原本打算休息一天。但是她非常好学，很自觉地继续学习。</p>
+
+<p>今天主要学习了 段落，文本格式化。了解了其基本用法。</p>
+
+<p>每日一小步，坚持就是胜利。丹丹，你是最棒的！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第一天学习]]></title>
