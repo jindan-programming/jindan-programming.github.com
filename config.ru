@@ -33,7 +33,7 @@ class SinatraStaticServer < Sinatra::Base
     p system('rake deploy')
     p system('git add .')
     p system("git commit -m 'add post #{params[:title]}'")
-    p system("git push source")
+    p system("git push origin source")
     "update_success"
   end
 
