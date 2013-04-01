@@ -1,7 +1,10 @@
+body {
+  background-image: url('/images/bg.png')
+}
+
 .container {
   width: 960px;
   margin: 20px auto;
-  background-image: url('/images/bg.png')
 }
 
 .alert-section {

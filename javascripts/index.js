@@ -39,7 +39,7 @@ $(function(){
     title = $('.title').val();
     content = editor.getElement('editor').body.innerHTML;
 
-    $.post('/', {title: title, content: content}, function(data){
+    $.post('/admin', {title: title, content: content}, function(data){
       $('.alert-section').html(data);
     });
   });
