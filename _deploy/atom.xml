@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-01T22:08:07+08:00</updated>
+  <updated>2013-04-01T22:14:37+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -19,6 +19,23 @@
     <updated>2013-04-01T22:07:00+08:00</updated>
     <id>http://jindan-programming.github.com/blog/2013/04/01/tesss</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ceshi    sssssnnnnn]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/01/ceshi-sssssnnnnn/"/>
+    <updated>2013-04-01T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/01/ceshi-sssssnnnnn</id>
+    <content type="html"><![CDATA[<h1> 链接标签</h1>
+
+<p>- 文字链接
+- 图片链接</p>
+
+<h2> 段落</h2>
+
+<p>- ssss
+- wwww</p>
 ]]></content>
   </entry>
   
