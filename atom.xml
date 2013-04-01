@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-01T20:26:16+08:00</updated>
+  <updated>2013-04-01T20:30:21+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,32 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[上述事实上]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/shang-shu-shi-shi-shang/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/shang-shu-shi-shi-shang</id>
-    <content type="html"><![CDATA[<h1> test</h1>
-
-<h2> tssss</h2>
-
-<h1> ssss</h1>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[html 学习 测试]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi-ce-shi/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi-ce-shi</id>
-    <content type="html"><![CDATA[<h1> test</h1>
-
-<h2> tssss</h2>
-
-<h1> ssss</h1>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[html 学习]]></title>
