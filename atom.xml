@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-01T21:47:10+08:00</updated>
+  <updated>2013-04-01T23:07:01+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -14,15 +14,29 @@
 
   
   <entry>
-    <title type="html"><![CDATA[html 学习]]></title>
+    <title type="html"><![CDATA[ HTML 学习]]></title>
     <link href="http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
+    <updated>2013-04-01T22:59:00+08:00</updated>
     <id>http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi</id>
-    <content type="html"><![CDATA[<h1> test</h1>
+    <content type="html"><![CDATA[<p>今天继续学习 html。</p>
 
-<h2> tssss</h2>
+<p>今天主要学习了以下几块</p>
 
-<h1> ssss</h1>
+<ul>
+<li>格式化</li>
+<li>编辑器</li>
+<li>样式</li>
+<li>链接</li>
+<li>图像</li>
+<li>表格</li>
+</ul>
+
+
+<p>其中图像中对位置变动，静动态图片，图像映射印象深刻</p>
+
+<p>关于表格，如何写表头，表格，单个表单元，合并单元，嵌套表格</p>
+
+<p>明天重点要看布局和表单，然后需要进行一些测验。</p>
 ]]></content>
   </entry>
   
