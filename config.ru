@@ -29,9 +29,9 @@ class SinatraStaticServer < Sinatra::Base
         file.puts line
       end
     end
+    p system('git add .')
     p system('rake generate')
     p system('rake "deploy"')
-    p system('git add .')
     p system("git commit -m 'add post #{params[:title]}'")
     p system("git push origin source")
     "update_success"
