@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[金丹的程序之路]]></title>
+  <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
+  <link href="http://jindan-programming.github.com/"/>
+  <updated>2013-04-01T23:07:01+08:00</updated>
+  <id>http://jindan-programming.github.com/</id>
+  <author>
+    <name><![CDATA[jindan and BF]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ HTML 学习]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi/"/>
+    <updated>2013-04-01T22:59:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi</id>
+    <content type="html"><![CDATA[<p>今天继续学习 html。</p>
+
+<p>今天主要学习了以下几块</p>
+
+<ul>
+<li>格式化</li>
+<li>编辑器</li>
+<li>样式</li>
+<li>链接</li>
+<li>图像</li>
+<li>表格</li>
+</ul>
+
+
+<p>其中图像中对位置变动，静动态图片，图像映射印象深刻</p>
+
+<p>关于表格，如何写表头，表格，单个表单元，合并单元，嵌套表格</p>
+
+<p>明天重点要看布局和表单，然后需要进行一些测验。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[测试 from mac]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/01/ce-shi--from-mac/"/>
+    <updated>2013-04-01T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/01/ce-shi&#8211;from-mac</id>
+    <content type="html"><![CDATA[<h1> test</h1>
+
+<h2> tssss</h2>
+
+<h1> ssss</h1>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[html学习]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/03/29/htmlxue-xi/"/>
+    <updated>2013-03-29T23:12:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/03/29/htmlxue-xi</id>
+    <content type="html"><![CDATA[<p>今天我状态不好，所以原本打算休息一天。但是她非常好学，很自觉地继续学习。</p>
+
+<p>今天主要学习了 段落，文本格式化。了解了其基本用法。</p>
+
+<p>每日一小步，坚持就是胜利。丹丹，你是最棒的！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[第一天学习]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/03/28/di-yi-tian-xue-xi/"/>
+    <updated>2013-03-28T23:46:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/03/28/di-yi-tian-xue-xi</id>
+    <content type="html"><![CDATA[<p>今天是正式开始学习的第一天，我给她安排的任务不多，主要是学习
+<a href="http://www.w3school.com.cn/html/index.asp">w3school</a> 里面的 html
+相关课程。目的是感受一下程序是如何运行，如何编写的。 w3school
+提供了循序渐进的学习方式，并且可以马上试验效果，所以非常适合没有任何程序语言基础的女友学习。</p>
+
+<p>我给她制定了一个目标：了解 html 基本组成和语法。时间是两个小时。</p>
+
+<p>实际操作下来，她学习了三个番茄。结果了解了如何写标题，如何写段落，如何设置标题位置和背景颜色，如何在文档中插入链接，图片，如何换行，如何加横行以及如何添加注释。</p>
+
+<p>作业代码:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;body</span> <span class="na">bgcolor=</span><span class="s">&quot;green&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;h1</span> <span class="na">align=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>标题一<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>hostease w3school tiy<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'><span class="nt">&lt;a</span>
+</span><span class='line'><span class="na">href=</span><span class="s">&quot;http://zhidao.baidu.com/question/326962953.html&quot;</span><span class="nt">&gt;</span>颜色english<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;h2</span> <span class="na">align=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>标题二<span class="nt">&lt;/h2&gt;</span>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<span class="nt">&lt;br/&gt;</span>
+</span><span class='line'>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<span class="nt">&lt;hr/&gt;</span>
+</span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://t3.baidu.com/it/u=382498400,157213796&amp;fm=24&amp;gp=0.jpg&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;h3</span> <span class="na">align=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>标题三<span class="nt">&lt;/h3&gt;</span>
+</span><span class='line'><span class="c">&lt;!--祝联新闭嘴--&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>效果图如下：</p>
+
+<p><html>
+<body bgcolor="green"></p>
+
+<h1 align="center">标题一</h1>
+
+
+<p>hostease w3school tiy</p>
+
+
+<p><a
+href="http://zhidao.baidu.com/question/326962953.html">颜色english</a></p>
+
+<h2 align="left">标题二</h2>
+
+
+<p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<br/>
+段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<hr/>
+<img src="http://t3.baidu.com/it/u=382498400,157213796&fm=24&gp=0.jpg"/>
+<h3 align="right">标题三</h3>
+<!--祝联新闭嘴-->
+
+</body>
+</html>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[开始计划]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/03/27/kai-shi-ji-hua/"/>
+    <updated>2013-03-27T23:47:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/03/27/kai-shi-ji-hua</id>
+    <content type="html"><![CDATA[<p>今天女友正式决定开始学习程序。为了督促她能够坚持下去，也为了做一个记录，我建立了这个博客：金丹的程序之路。</p>
+
+<p>今天主要跟她讲了一下程序是什么？程序可以干什么？程序有哪些分类？然后一起讨论了下之后的学习计划：我帮她制定目标和计划，负责考察，提供资料。主要靠她自学为主，教学为辅。</p>
+
+<p>另外，我还罗列了程序的一个知识体系和关联知识。</p>
+
+<p>Anyway，
+一切都刚刚起步，我没有教学经验，她没有程序经验，事事都需要摸索。但是，万事开头难。let&#8217;s
+go go go ！</p>
+]]></content>
+  </entry>
+  
+</feed>
