@@ -15,7 +15,9 @@ class SinatraStaticServer < Sinatra::Base
   post '/admin' do
     return 'error' if params[:title] == "" || params[:content] == ""
     title = PinYin.permlink(params[:title])
-    File.open("#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown", 'w') do |file|
+    filename = File.join($root, 'source', '_posts', "#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown")
+    FileUtils.touch(filename) unless File.exists?(filename)
+    File.open(filename, 'w') do |file|
       file.puts "---"
       file.puts "layout: post"
       file.puts "title: #{params[:title]}"
@@ -27,6 +29,11 @@ class SinatraStaticServer < Sinatra::Base
         file.puts line
       end
     end
+    p system('rake generate')
+    p system('rake deploy')
+    p system('git add .')
+    p system("git commit -m 'add post #{params[:title]}'")
+    p system("git push source")
     "update_success"
   end
 

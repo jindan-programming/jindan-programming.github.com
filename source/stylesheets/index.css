@@ -1,6 +1,6 @@
 .container {
   width: 960px;
-  margin: 20px auto;
+  margin: auto;
   background-image: url('/images/bg.png')
 }
 
@@ -9,5 +9,4 @@
   margin-right: auto;
   width: 400px;
   margin-bottom: 10px;
-}
 }
