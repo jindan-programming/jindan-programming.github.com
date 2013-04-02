@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-01T23:16:52+08:00</updated>
+  <updated>2013-04-02T22:22:07+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -14,29 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[ HTML 学习]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi.markdown/"/>
-    <updated>2013-04-01T22:59:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi.markdown</id>
-    <content type="html"><![CDATA[今天继续学习 html。
-
-今天主要学习了以下几块
-
-- 格式化
-- 编辑器
-- 样式
-- 链接
-- 图像
-- 表格
-
-其中图像中对位置变动，静动态图片，图像映射印象深刻
-
-关于表格，如何写表头，表格，单个表单元，合并单元，嵌套表格
-
-明天重点要看布局和表单，然后需要进行一些测验。
-
-
-
+    <title type="html"><![CDATA[sssww]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/02/sssww/"/>
+    <updated>2013-04-02T22:21:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/02/sssww</id>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
@@ -64,63 +46,6 @@
 <p>关于表格，如何写表头，表格，单个表单元，合并单元，嵌套表格</p>
 
 <p>明天重点要看布局和表单，然后需要进行一些测验。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tsssss]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/tsssss/"/>
-    <updated>2013-04-01T22:19:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/tsssss</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[swedsqasd]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/swedsqasd/"/>
-    <updated>2013-04-01T22:16:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/swedsqasd</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tesss]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/tesss/"/>
-    <updated>2013-04-01T22:07:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/tesss</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ceshi    sssssnnnnn]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/ceshi-sssssnnnnn/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/ceshi-sssssnnnnn</id>
-    <content type="html"><![CDATA[<h1> 链接标签</h1>
-
-<p>- 文字链接
-- 图片链接</p>
-
-<h2> 段落</h2>
-
-<p>- ssss
-- wwww</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[测试 from mac]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/ce-shi--from-mac/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/ce-shi&#8211;from-mac</id>
-    <content type="html"><![CDATA[<h1> test</h1>
-
-<h2> tssss</h2>
-
-<h1> ssss</h1>
 ]]></content>
   </entry>
   
