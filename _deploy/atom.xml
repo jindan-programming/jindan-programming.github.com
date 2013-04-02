@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-02T23:33:14+08:00</updated>
+  <updated>2013-04-02T23:45:56+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[html 第三天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/02/html-di-san-tian/"/>
+    <updated>2013-04-02T23:34:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/02/html-di-san-tian</id>
+    <content type="html"><![CDATA[<p>这是 html 学习的第三天。今天的任务是: <em>学习布局和表单，并通过实例回顾之前学习的内容。</em></p>
+
+<p>今天学习的主要内容具体如下：</p>
+
+<ul>
+<li>列表
+
+<ul>
+<li>有序列表</li>
+<li>无序列表</li>
+</ul>
+</li>
+<li>布局</li>
+<li>表单
+
+<ul>
+<li>文本域</li>
+<li>密码域</li>
+<li>单选框</li>
+<li>复选框</li>
+<li>表单的动作属性和确认按钮的设置</li>
+</ul>
+</li>
+</ul>
+
+
+<p>并且还通过实例复习了之前学习的内容：</p>
+
+<ol>
+<li>基础标签</li>
+<li>格式化标签</li>
+</ol>
+
+
+<p>另外，我还推荐其浏览 <a href="http://ruby-china.org">ruby-china</a> 论坛</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[title]]></title>
