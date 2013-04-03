@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-03T09:15:08+08:00</updated>
+  <updated>2013-04-03T23:41:50+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -14,32 +14,14 @@
 
   
   <entry>
-    <title type="html"><![CDATA[测试 2]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/03/ce-shi--2/"/>
+    <title type="html"><![CDATA[html 第四天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/03/html-di-si-tian/"/>
     <updated>2013-04-03T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/03/ce-shi&#8211;2</id>
-    <content type="html"><![CDATA[<h1> 链接标签</h1>
-
-<p>- 文字链接
-- 图片链接</p>
-
-<h2> 段落</h2>
-
-<p>- ssss
-- wwww</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[测试]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/03/ce-shi/"/>
-    <updated>2013-04-03T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/03/ce-shi</id>
-    <content type="html"><![CDATA[<h1> test</h1>
-
-<h2> tssss</h2>
-
-<h1> ssss</h1>
+    <id>http://jindan-programming.github.com/blog/2013/04/03/html-di-si-tian</id>
+    <content type="html"><![CDATA[<p>因为明天就是清明了，所以今天放个假，我并没有安排特别的任务，只是让她自由学习。
+  虽然我这么说，但是她对程序了解不多，目前也就知道 html。所以还是主要学习了 html。<br/>
+  今天她主要是看了实例部分，并自己动手写了一些代码，看上去，她感觉挺好玩的，是的， It&#8217;s funny！<br/>
+  另外，她明天打算和朋友去玩。不带我。哼！哼！哼！</p>
 ]]></content>
   </entry>
   
