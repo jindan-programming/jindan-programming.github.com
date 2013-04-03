@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-02T23:46:21+08:00</updated>
+  <updated>2013-04-03T09:14:54+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[测试 2]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/03/ce-shi--2/"/>
+    <updated>2013-04-03T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/03/ce-shi&#8211;2</id>
+    <content type="html"><![CDATA[<h1> 链接标签</h1>
+
+<p>- 文字链接
+- 图片链接</p>
+
+<h2> 段落</h2>
+
+<p>- ssss
+- wwww</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[测试]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/03/ce-shi/"/>
+    <updated>2013-04-03T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/03/ce-shi</id>
+    <content type="html"><![CDATA[<h1> test</h1>
+
+<h2> tssss</h2>
+
+<h1> ssss</h1>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[html 第三天]]></title>
@@ -53,24 +83,6 @@
 
 
 <p>另外，我还推荐其浏览 <a href="http://ruby-china.org">ruby-china</a> 论坛</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[title]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/02/title/"/>
-    <updated>2013-04-02T23:33:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/02/title</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sssww]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/02/sssww/"/>
-    <updated>2013-04-02T22:21:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/02/sssww</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
