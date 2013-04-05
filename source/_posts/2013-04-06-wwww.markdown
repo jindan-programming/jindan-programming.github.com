@@ -1,0 +1,29 @@
+---
+layout: post
+title: wwww
+---
+
+昨天清明去太子湾踏青，太累了就没学习，所以今天就特别想多看多学习一点，不想就此懈怠了，继续复习html基础教程，主要有以下内容：
+
+&lt;ol&gt; &lt;li&gt;框架&lt;/li&gt;
+  &lt;ul&gt;   &lt;li&gt;垂直框架&lt;/li&gt;
+  &lt;li&gt;水平框架&lt;/li&gt;
+  &lt;li&gt;混合框架&lt;/li&gt;
+&lt;/ul&gt;  &lt;li&gt;表格&lt;/li&gt;
+
+   &lt;p&gt;表格边框调整，背景颜色设置，内容排列，标题及表头设置&lt;/p&gt;
+&lt;li&gt;列表&lt;/li&gt;  &lt;ul&gt;
+ &lt;li&gt;有序列表&lt;/li&gt;
+ &lt;li&gt;无序列表&lt;/li&gt;
+ &lt;li&gt;定义列表&lt;/li&gt;
+&lt;/ul&gt;  &lt;li&gt;表单&lt;/li&gt;
+&lt;ul&gt;   &lt;li&gt;文本域&lt;/li&gt;
+ &lt;li&gt;密码域&lt;/li&gt;
+ &lt;li&gt;创建按钮&lt;/li&gt;
+ &lt;li&gt;下拉列表&lt;/li&gt;
+&lt;/ul&gt;  &lt;li&gt;图像&lt;/li&gt;  
+  &lt;/ol&gt;
+
+调整图像大小，从不同位置插入图像，制作图像链接
+
+今天是我第一次自己写这个博客，嘿嘿，自己给自己一点鼓励，加油！坚持！ 
