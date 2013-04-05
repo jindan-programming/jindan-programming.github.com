@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-03T23:41:50+08:00</updated>
+  <updated>2013-04-06T00:10:21+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[html基础最后一天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/06/html-ji-chu-zui-hou-yi-tian/"/>
+    <updated>2013-04-06T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/06/html-ji-chu-zui-hou-yi-tian</id>
+    <content type="html"><![CDATA[<p>昨天清明去太子湾踏青，太累了就没学习，所以今天就特别想多看多学习一点，不想就此懈怠了，继续复习html基础教程，主要有以下内容： &lt;ol&gt;   &lt;li&gt;框架       &lt;ul &gt;       &lt;li&gt;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[html 第四天]]></title>
