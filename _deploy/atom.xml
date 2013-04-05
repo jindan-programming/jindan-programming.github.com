@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-06T00:36:14+08:00</updated>
+  <updated>2013-04-06T00:42:26+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -18,11 +18,44 @@
     <link href="http://jindan-programming.github.com/blog/2013/04/06/html-ji-chu-zui-hou-yi-tian/"/>
     <updated>2013-04-06T00:00:00+08:00</updated>
     <id>http://jindan-programming.github.com/blog/2013/04/06/html-ji-chu-zui-hou-yi-tian</id>
-    <content type="html"><![CDATA[<p>昨天清明去太子湾踏青，太累了就没学习，所以今天就特别想多看多学习一点，不想就此懈怠了，继续复习html基础教程，主要有以下内容：
-  - 框架    - 垂直框架    - 水平框架    - 混合框架  - 表格<br/>
-     表格边框调整，背景颜色设置，内容排列，标题及表头设置  - 列表   - 有序列表   - 无序列表   - 定义列表  - 表单   - 文本域   - 密码域   - 创建按钮   - 下拉列表  - 图像<br/>
-  调整图像大小，从不同位置插入图像，制作图像链接<br/>
-  今天是我第一次自己写这个博客，嘿嘿，自己给自己一点鼓励，加油！坚持！</p>
+    <content type="html"><![CDATA[<p>昨天清明去太子湾踏青，太累了就没学习，所以今天就特别想多看多学习一点，不想就此懈怠了，继续复习html基础教程，主要有以下内容：</p>
+
+<ul>
+<li><p>框架</p>
+
+<ul>
+<li>垂直框架</li>
+<li>水平框架</li>
+<li>混合框架</li>
+</ul>
+</li>
+<li><p>表格</p>
+
+<p> 表格边框调整，背景颜色设置，内容排列，标题及表头设置</p></li>
+<li><p>列表</p>
+
+<ul>
+<li>有序列表</li>
+<li>无序列表</li>
+<li>定义列表</li>
+</ul>
+</li>
+<li><p>表单</p>
+
+<ul>
+<li>文本域</li>
+<li>密码域</li>
+<li>创建按钮</li>
+<li>下拉列表</li>
+</ul>
+</li>
+<li><p>图像</p></li>
+</ul>
+
+
+<p>调整图像大小，从不同位置插入图像，制作图像链接</p>
+
+<p>今天是我第一次自己写这个博客，嘿嘿，自己给自己一点鼓励，加油！坚持！</p>
 ]]></content>
   </entry>
   
