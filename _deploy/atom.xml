@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-06T00:45:30+08:00</updated>
+  <updated>2013-04-08T22:41:24+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -14,33 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[xxxxx]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/06/xxxxx/"/>
-    <updated>2013-04-06T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/06/xxxxx</id>
-    <content type="html"><![CDATA[<p>昨天清明去太子湾踏青，太累了就没学习，所以今天就特别想多看多学习一点，不想就此懈怠了，继续复习html基础教程，主要有以下内容：</p>
-
-<p>- 框架
-  - 垂直框架
-  - 水平框架
-  - 混合框架
-- 表格</p>
-
-<p>   表格边框调整，背景颜色设置，内容排列，标题及表头设置
-- 列表
- - 有序列表
- - 无序列表
- - 定义列表
-- 表单
- - 文本域
- - 密码域
- - 创建按钮
- - 下拉列表
-- 图像</p>
-
-<p>调整图像大小，从不同位置插入图像，制作图像链接</p>
-
-<p>今天是我第一次自己写这个博客，嘿嘿，自己给自己一点鼓励，加油！坚持！</p>
+    <title type="html"><![CDATA[jj]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/08/jj/"/>
+    <updated>2013-04-08T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/08/jj</id>
+    <content type="html"><![CDATA[<p>hh</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS第一天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/08/css-di-yi-tian/"/>
+    <updated>2013-04-08T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/08/css-di-yi-tian</id>
+    <content type="html"><![CDATA[<p>之前把html基础大概的了解了一下，今天开始学习CSS，心情不太好，工作不顺心，死货又惹我生气，所以也没怎么学习，就粗略地看了一下基础教程中的语法、派生选择器、id选择器、类选择器，感觉比html的要复杂，明天调整好心情再学习一遍。</p>
 ]]></content>
   </entry>
   
