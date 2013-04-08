@@ -35,6 +35,17 @@ $(function(){
   }
   editor = new EpicEditor(opts).load();
 
+  $('.preview-btn').click(function(){
+    title = $('.title').val();
+    content = editor.getElement('editor').body.innerHTML;
+
+    $.post('/preview', {title: title, content: content}, function(data){
+      if(data == 'ok') {
+        window.open('/', '_blank');
+      }
+    });
+  });
+
   $('.submit-btn').click(function(){
     title = $('.title').val();
     content = editor.getElement('editor').body.innerHTML;

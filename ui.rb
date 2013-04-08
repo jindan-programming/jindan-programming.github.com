@@ -5,12 +5,8 @@ $root = ::File.dirname(__FILE__)
 
 class UIServer < Sinatra::Base
 
-  get '/admin' do
-    erb :index
-  end
-
-  post '/admin' do
-    return 'error' if params[:title] == "" || params[:content] == ""
+  def save_post
+    return nil if params[:title] == "" || params[:content] == ""
     title = PinYin.permlink(params[:title])
     filename = File.join($root, 'source', '_posts', "#{Time.now.strftime('%Y-%m-%d')}-#{title}.markdown")
     FileUtils.touch(filename) unless File.exists?(filename)
@@ -27,6 +23,19 @@ class UIServer < Sinatra::Base
       end
     end
     p system('rake generate')
+  end
+
+  get '/admin' do
+    erb :index
+  end
+
+  post '/preview' do
+    save_post
+    "ok"
+  end
+
+  post '/admin' do
+    return "error" unless save_post
     p system('rake "deploy"')
     p system('git add .')
     p system("git commit -am 'add post #{params[:title]}'")
