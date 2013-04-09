@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-08T22:43:13+08:00</updated>
+  <updated>2013-04-09T23:48:06+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[css第二天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/09/css-di-er-tian/"/>
+    <updated>2013-04-09T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/09/css-di-er-tian</id>
+    <content type="html"><![CDATA[<p>今天晚上状态不错，全心投入学习了一个小时，白天上班时间偷偷地回顾了一下昨天看的内容，嘿嘿，还好没有被旁边那个可恶的助理说，晚上新学习的内容有css创建和背景设置。背景图片的设置，位置（<code>background-position</code>),有英文单词设置，百分比设置和像素设置三种、平铺重复（<code>background-repeat</code>)、图片固定（<code>background-attachment</code>)值设置为<code>fixed</code>时为固定。图片，颜色，位置，平铺和固定可以用一个声明表示，如
+  <code>css  body {      background: #ff0000 url(/i/eg_bg_03.gif) no-repeat fixed center;   } </code>  目前学习到的几种选择器的定义符号分别是：<br/>
+  1. <code>空格</code> 后代选择器<br/>
+  2. <code>&amp;gt;</code> 子类选择器<br/>
+  3. <code>+</code>兄弟选择器<br/>
+  4. <code>.</code>类选择器<br/>
+  5. <code>#</code> id选择器<br/>
+  6. <code>[]</code>属性选择器<br/>
+  7. <code>,</code> 多个元素样式的合并<br/>
+  span不会换行，是一个行内元素，没有特殊属性。div是一个块级元素，会自动换行。这个老是忘记，写下来，方便提醒自己。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CSS第一天]]></title>
