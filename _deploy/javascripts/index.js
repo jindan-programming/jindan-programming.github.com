@@ -35,6 +35,7 @@ $(function(){
   }
   editor = new EpicEditor(opts).load();
 
+<<<<<<< HEAD
   $('.preview-btn').click(function(){
     title = $('.title').val();
     content = editor.exportFile();
@@ -71,6 +72,13 @@ $(function(){
     $.post('/admin', {title: title, content: content}, function(data){
       ele.show();
       $('.processing').hide();
+=======
+  $('.submit-btn').click(function(){
+    title = $('.title').val();
+    content = editor.getElement('editor').body.innerHTML;
+
+    $.post('/admin', {title: title, content: content}, function(data){
+>>>>>>> 839ee6709aead11c257cd8ca2b97c252a6c3bdb4
       $('.alert-section').html(data);
     });
   });
