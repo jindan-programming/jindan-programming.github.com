@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>html测验 - 金丹的程序之路</title>
+  <meta name="author" content="jindan and BF">
+
+  
+  <meta name="description" content="今天对上周学习的 html 知识进行一个小测验： 写一个页面，页面中包含一个表格，表格头分别是：名字，派别，技能。图片。每项纪录分别为郭靖、桃花岛、祥龙十巴掌。周伯通，武当，双手湖泊，小龙女，古墓派，玉女心经。其中名字都连接到百度搜索名字结果页，图片一拦贴上它们的图片。然后加一个横线， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jindan-programming.github.com/blog/2013/04/10/html-ce-yan">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="金丹的程序之路" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">金丹的程序之路</a></h1>
+  
+    <h2>Web 开发</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jindan-programming.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Html测验</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T00:00:00+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>今天对上周学习的 html 知识进行一个小测验：</p>
+
+<ol>
+<li><p>写一个页面，页面中包含一个表格，表格头分别是：名字，派别，技能。图片。每项纪录分别为郭靖、桃花岛、祥龙十巴掌。周伯通，武当，双手湖泊，小龙女，古墓派，玉女心经。其中名字都连接到百度搜索名字结果页，图片一拦贴上它们的图片。然后加一个横线，之后以列表形式列出你经常逛的网站。最后将你的页面编码设置为 UTF-8。</p></li>
+<li><p>写一个表单，可以填写姓名，身份征号码，电话号码，邮箱，QQ号码，性别，是否已婚，个人简介。其中省份证号码，电话，QQ号码限定为数字，性别提供两个选择：男和女，是否已婚为一个可勾选项，个人简介为一个 100x100 的输入框。最后，表单要能提交到 http://www.baidu.com .</p></li>
+</ol>
+
+
+<p>以下是她最后提交的代码</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html;charset=utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;tr&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;th&gt;</span>名字<span class="nt">&lt;/th&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;th&gt;</span>派别<span class="nt">&lt;/th&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;th&gt;</span>技能<span class="nt">&lt;/th&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;th&gt;</span>图片<span class="nt">&lt;/th&gt;</span>
+</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
+</span><span class='line'><span class="nt">&lt;tr&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.baidu.com/s?wd=%E9%83%AD%E9%9D%96&amp;rsv_bp=0&amp;ch=&amp;tn=baidu&amp;bar=&amp;rsv_spt=3&amp;ie=utf-8&amp;rsv_sug3=4&amp;rsv_sug=0&amp;rsv_sug4=373&amp;rsv_sug1=1&amp;inputT=2209&quot;</span><span class="nt">&gt;</span>郭靖<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>桃花岛<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>降龙十八掌<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.hinews.cn/pic/0/10/31/33/10313319_317766.jpg&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
+</span><span class='line'><span class="nt">&lt;tr&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.baidu.com/s?ie=utf-8&amp;bs=%E9%83%AD%E9%9D%96&amp;f=8&amp;rsv_bp=1&amp;wd=%E5%91%A8%E4%BC%AF%E9%80%9A&amp;rsv_sug3=6&amp;rsv_sug=0&amp;rsv_sug4=372&amp;rsv_sug1=4&amp;inputT=1623&quot;</span><span class="nt">&gt;</span>周伯通<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>武当<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>双手湖泊<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://a0.att.hudong.com/02/20/01300000348987123699206289071.jpg&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
+</span><span class='line'><span class="nt">&lt;tr&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.baidu.com/s?ie=utf-8&amp;bs=%E5%91%A8%E4%BC%AF%E9%80%9A&amp;f=8&amp;rsv_bp=1&amp;wd=%E5%B0%8F%E9%BE%99%E5%A5%B3&amp;rsv_sug3=13&amp;rsv_sug=0&amp;rsv_sug4=758&amp;rsv_sug1=7&amp;inputT=5329&quot;</span><span class="nt">&gt;</span>小龙女<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>古墓派<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;</span>玉女心经<span class="nt">&lt;/td&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;td&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://jpp1.imghb.com/pic/pic/68/94/77/1396683868947776_a602x602.jpg&quot;</span><span class="nt">&gt;&lt;/td&gt;</span>
+</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
+</span><span class='line'><span class="nt">&lt;/table&gt;</span>
+</span><span class='line'><span class="nt">&lt;hr/&gt;</span>
+</span><span class='line'><span class="nt">&lt;h2&gt;</span>经常逛的网站<span class="nt">&lt;/h2&gt;</span>
+</span><span class='line'><span class="nt">&lt;ul&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.baidu.com/&quot;</span><span class="nt">&gt;</span>百度<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ol&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://music.baidu.com/&quot;</span><span class="nt">&gt;</span>百度音乐<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href</span> <span class="err">&quot;</span><span class="na">http:</span><span class="err">//</span><span class="na">video</span><span class="err">.</span><span class="na">baidu</span><span class="err">.</span><span class="na">com</span><span class="err">/&quot;</span><span class="nt">&gt;</span>百度视频<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://tieba.baidu.com/index.html&quot;</span><span class="nt">&gt;</span>百度贴吧<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/ol&gt;&lt;/li&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.sina.com.cn/&quot;</span><span class="nt">&gt;</span>新浪<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ol&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://news.sina.com.cn/&quot;</span><span class="nt">&gt;</span>新浪news<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://weibo.com/&quot;</span><span class="nt">&gt;</span>新浪微博<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/ol&gt;&lt;/li&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.taobao.com/&quot;</span><span class="nt">&gt;</span>淘宝网<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.jd.com/&quot;</span><span class="nt">&gt;</span>京东商城<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</span><span class='line'><span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;http://www.baidu.com/&quot;</span> <span class="na">method=</span><span class="s">&#39;post&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>姓名：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>身份证号码：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">name=</span><span class="s">&quot;ID card&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>电话号码：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">name=</span><span class="s">&quot;phone&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>邮箱：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;mail&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>QQ号码：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">name=</span><span class="s">&quot;QQ&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>男性：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;male&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>女性：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span><span class="nt">/&gt;&lt;br/&gt;</span>
+</span><span class='line'>是否已婚：
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name=</span><span class="s">&quot;wedlock&quot;</span><span class="nt">&gt;&lt;br/&gt;</span>
+</span><span class='line'>个人简介：
+</span><span class='line'><span class="nt">&lt;textarea</span> <span class="na">size=</span><span class="s">&quot;100x100&quot;</span> <span class="na">name=</span><span class="s">&#39;wwww&#39;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</span><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;百度&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;/form&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这次测验主要考察了表格，列表，表单三块知识点，并使其产生对 html 的擅长和不足有一个了解，为之后学习其它的内容做一个铺垫</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">jindan and BF</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T00:00:00+08:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jindan-programming.github.com/blog/2013/04/10/html-ce-yan/" data-via="" data-counturl="http://jindan-programming.github.com/blog/2013/04/10/html-ce-yan/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/09/css-di-er-tian/" title="Previous Post: css第二天">&laquo; css第二天</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/10/html-ce-yan/">html测验</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/09/css-di-er-tian/">css第二天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/08/css-di-yi-tian/">CSS第一天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/06/html-ji-chu-zui-hou-yi-tian/">html基础最后一天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/03/html-di-si-tian/">html 第四天</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - jindan and BF -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
