@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-13T16:13:24+08:00</updated>
+  <updated>2013-04-13T16:14:47+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[wwww]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/13/wwww/"/>
+    <updated>2013-04-13T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/13/wwww</id>
+    <content type="html"><![CDATA[<h1>test</h1>
+
+<h2>tssss</h2>
+
+<h1>ssss</h1>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="err">测试代码</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<blockquote><p>测试引用
+sssss
+测试引用</p></blockquote>
+
+<p>测试</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>ssss
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[测试]]></title>

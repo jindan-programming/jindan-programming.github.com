@@ -39,6 +39,10 @@ $(function(){
     title = $('.title').val();
     content = editor.exportFile();
 
+    if(title == "" || content == ""){
+      alert("please input title and content");
+      return false;
+    }
     ele = $(this);
     ele.after("<span class='processing'></span>");
     ele.hide();
