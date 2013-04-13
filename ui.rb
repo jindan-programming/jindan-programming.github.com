@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'sinatra/base'
 require 'ruby-pinyin'
 
@@ -17,10 +18,7 @@ class UIServer < Sinatra::Base
       file.puts "---"
       file.puts ""
 
-      lines = Sanitize.clean(params[:content], elements: ['br']).split("<br>")
-      lines.each do |line|
-        file.puts line
-      end
+      file.write params[:content]
     end
     p system('rake generate')
   end
@@ -40,6 +38,6 @@ class UIServer < Sinatra::Base
     p system('git add .')
     p system("git commit -am 'add post #{params[:title]}'")
     p system("git push origin source")
-    "update_success"
+    "发布成功,请到 <a href='http://jindan-programming.github.io/'>金丹的程序之路</a> 查看"
   end
 end

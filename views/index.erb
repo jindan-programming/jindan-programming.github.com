@@ -3,23 +3,16 @@
 
 <section class="well container">
   <div><span class='alert-section alert-success'></span></div>
-  <form method='post' class='form-horizontal'>
-    <div class='control-group'>
-      <span class='control-label'>标题</span>
-      <div class='controls'><input type='text' name='title' class='span5 title'/></div>
-    </div>
-    <div class='control-group'>
-      <span class='control-label'>正文</span>
-      <div class='controls'>
-        <div style='height: 450px' id="epiceditor"></div>
-      </div>
-    </div>
-    <div class='control-group'>
-      <div class='controls'>
-        <input class='btn btn-danger pull-right submit-btn' type="button" value="发布" />
-        <input class='btn btn-success pull-right preview-btn' type="button" value="预览" />
-      </div>
-    </div>
+  <div class='title-section'>
+    <input type='text' name='title' class='title'/></div>
+  </div>
+  <div class='content-section'>
+      <div style='height: 450px' id="epiceditor"></div>
+  </div>
+  <div class='buttons'>
+    <input class='btn btn-danger submit-btn' type="button" value="发布" />
+    <input class='btn btn-success preview-btn' type="button" value="预览" />
+  </div>
   </form>
 </section>
 
