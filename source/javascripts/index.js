@@ -39,8 +39,14 @@ $(function(){
     title = $('.title').val();
     content = editor.getElement('editor').body.innerHTML;
 
+    ele = $(this);
+    ele.after("<span class='processing'></span>");
+    ele.hide();
+
     $.post('/preview', {title: title, content: content}, function(data){
       if(data == 'ok') {
+        ele.show();
+        $('.processing').hide();
         window.open('/', '_blank');
       }
     });
@@ -48,9 +54,23 @@ $(function(){
 
   $('.submit-btn').click(function(){
     title = $('.title').val();
+<<<<<<< HEAD
     content = editor.getElement('editor').body.innerHTML;
+=======
+    content = editor.exportFile();
+
+    if(title == "" || content == ""){
+      alert("please input title and content");
+      return false;
+    }
+    ele = $(this);
+    ele.after("<span class='processing'></span>");
+    ele.hide();
+>>>>>>> add post 测试
 
     $.post('/admin', {title: title, content: content}, function(data){
+      ele.show();
+      $('.processing').hide();
       $('.alert-section').html(data);
     });
   });
