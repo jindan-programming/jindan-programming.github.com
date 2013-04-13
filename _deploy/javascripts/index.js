@@ -37,7 +37,7 @@ $(function(){
 
   $('.preview-btn').click(function(){
     title = $('.title').val();
-    content = editor.getElement('editor').body.innerHTML;
+    content = editor.exportFile();
 
     ele = $(this);
     ele.after("<span class='processing'></span>");
@@ -54,9 +54,6 @@ $(function(){
 
   $('.submit-btn').click(function(){
     title = $('.title').val();
-<<<<<<< HEAD
-    content = editor.getElement('editor').body.innerHTML;
-=======
     content = editor.exportFile();
 
     if(title == "" || content == ""){
@@ -66,7 +63,6 @@ $(function(){
     ele = $(this);
     ele.after("<span class='processing'></span>");
     ele.hide();
->>>>>>> add post 测试
 
     $.post('/admin', {title: title, content: content}, function(data){
       ele.show();
