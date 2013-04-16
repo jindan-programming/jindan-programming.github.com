@@ -4,11 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-<<<<<<< HEAD
-  <updated>2013-04-13T16:17:29+08:00</updated>
-=======
-  <updated>2013-04-01T23:07:01+08:00</updated>
->>>>>>> 839ee6709aead11c257cd8ca2b97c252a6c3bdb4
+  <updated>2013-04-17T06:24:45+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -18,7 +14,33 @@
 
   
   <entry>
-<<<<<<< HEAD
+    <title type="html"><![CDATA[css 第三天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/17/css-di-san-tian/"/>
+    <updated>2013-04-17T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/17/css-di-san-tian</id>
+    <content type="html"><![CDATA[<p>中间间断了几天，今天开始继续学习 css。</p>
+
+<p>今天主要研究了以下几块内容：</p>
+
+<ul>
+<li><code>background</code> 背景</li>
+<li><code>text</code> 文本</li>
+<li><code>font</code> 字体</li>
+<li><code>list</code> 列表</li>
+<li><code>table</code> 如何设置表格样式</li>
+<li><code>outline</code> 轮廓</li>
+<li>框模型概述</li>
+</ul>
+
+
+<p>css 总体上要比 html 复杂许多，有更多的东西需要记忆。
+有时候我们自己会懈怠，不想继续，但是，坚持往往是通向成功的唯一途径。</p>
+
+<p>come on！ 丹丹</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[html测验]]></title>
     <link href="http://jindan-programming.github.com/blog/2013/04/10/html-ce-yan/"/>
     <updated>2013-04-10T00:00:00+08:00</updated>
@@ -340,8 +362,6 @@
   </entry>
   
   <entry>
-=======
->>>>>>> 839ee6709aead11c257cd8ca2b97c252a6c3bdb4
     <title type="html"><![CDATA[ HTML 学习]]></title>
     <link href="http://jindan-programming.github.com/blog/2013/04/01/html-xue-xi/"/>
     <updated>2013-04-01T22:59:00+08:00</updated>
@@ -369,22 +389,6 @@
   </entry>
   
   <entry>
-<<<<<<< HEAD
-=======
-    <title type="html"><![CDATA[测试 from mac]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/04/01/ce-shi--from-mac/"/>
-    <updated>2013-04-01T00:00:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/04/01/ce-shi&#8211;from-mac</id>
-    <content type="html"><![CDATA[<h1> test</h1>
-
-<h2> tssss</h2>
-
-<h1> ssss</h1>
-]]></content>
-  </entry>
-  
-  <entry>
->>>>>>> 839ee6709aead11c257cd8ca2b97c252a6c3bdb4
     <title type="html"><![CDATA[html学习]]></title>
     <link href="http://jindan-programming.github.com/blog/2013/03/29/htmlxue-xi/"/>
     <updated>2013-03-29T23:12:00+08:00</updated>
