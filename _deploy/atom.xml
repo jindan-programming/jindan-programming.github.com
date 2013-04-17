@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-17T06:24:45+08:00</updated>
+  <updated>2013-04-17T23:56:24+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CSS第四天]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/17/css-di-si-tian/"/>
+    <updated>2013-04-17T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/17/css-di-si-tian</id>
+    <content type="html"><![CDATA[<p>今天学习了CSS框模型概述，内边距，边框。
+内边距属性<code>padding</code>,可以按照上、右、下、左的顺序设置各边内边距，可以使用不同单位（px、em、ex）或百分比值。上内边距<code>padding-top</code>
+右内边距<code>padding-right</code>  下内边距<code>padding-bottom</code>  左内边距<code>padding-left</code><br/>
+边框元素<code>border</code>  ：学习了如何设置边框样式<code>border-style</code>, 边框颜色<code>border-color</code>,边框宽度<code>border-width</code>，上右下左边框的样式、颜色、宽度可以分别设置，跟内边距的设置类似，在设置颜色和宽度之前必须先设置边框样式，否则后面两者都无法显示，因为没有样式就是没有边框。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[css 第三天]]></title>
