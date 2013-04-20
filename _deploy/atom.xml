@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-19T23:25:02+08:00</updated>
+  <updated>2013-04-20T22:37:05+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[回顾CSS]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/20/hui-gu-css/"/>
+    <updated>2013-04-20T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/20/hui-gu-css</id>
+    <content type="html"><![CDATA[<p>今天白天身体有点不适，一直没心情学习，但又不想因此中断进程，晚上花了半个小时回顾了一下CSS布局，另外找了一个新的教程，这里面对每一个属性每一个值都解释得非常详细，很不错的一个网站！复习的主要内容就是昨晚学的定位和浮动，还有整体的大概布局，今天状态不好，决定早点休息。某些人都在念叨念叨了，说我十几页还要分两次看，无视他！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CSS定位]]></title>
