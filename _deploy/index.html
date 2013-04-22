@@ -9,7 +9,50 @@
   <meta name="author" content="jindan and BF">
 
   
-  <meta name="description" content="今天白天身体有点不适，一直没心情学习，但又不想因此中断进程，晚上花了半个小时回顾了一下CSS布局，另外找了一个新的教程，这里面对每一个属性每一个值都解释得非常详细，很不错的一个网站！复习的主要内容就是昨晚学的定位和浮动，还有整体的大概布局，今天状态不好，决定早点休息。某些人都在念叨念叨了， &hellip;">
+  <meta name="description" content="今天对昨天学习的布局进行了一个练习。 代码如下： 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +108,337 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/22/css-bu-ju-lian-xi/">Css 布局练习</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-22T00:00:00+08:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天对昨天学习的布局进行了一个练习。</p>
+
+<p>代码如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">header</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">word-spacing</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="m">#c9d7e4</span> <span class="k">solid</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">font</span><span class="o">:</span><span class="n">Sans</span><span class="o">-</span><span class="k">serif</span> <span class="m">10px</span><span class="p">;</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'><span class="nt">header</span> <span class="nt">span</span><span class="nc">.first</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="m">4</span><span class="n">c4c4c</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">header</span> <span class="nt">a</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="m">4</span><span class="n">c4c4c</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">span</span><span class="nc">.left</span> <span class="nt">a</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.left1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.left2</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">240px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.left3</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">320px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.left4</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">370px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">span</span><span class="nc">.right</span> <span class="nt">a</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">span</span><span class="nc">.right</span> <span class="nt">a</span><span class="nc">.right1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.right2</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">110px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">a</span><span class="nc">.right3</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">160px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">div</span><span class="nc">.img</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">80</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">50px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nc">.box</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">20</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin-right</span><span class="o">:</span><span class="m">5</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="m">#c9d7e4</span><span class="p">;</span>
+</span><span class='line'>  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+</span><span class='line'>     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+</span><span class='line'>          <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nc">.box</span> <span class="nt">a</span> <span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.clearfix</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'><span class="nt">&lt;header&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;first&#39;</span><span class="nt">&gt;</span>CMS6BEY<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;left&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left1&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>首页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left2&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>所有宝贝<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left3&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>社区<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left4&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>关于我们<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;right&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right1&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>git登录<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right2&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>登录<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right3&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>注册<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'><span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;/header&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;img&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://e.hiphotos.baidu.com/album/w%3D2048/sign=7101844ef2deb48ffb69a6dec4273b29/960a304e251f95ca5d338c99c8177f3e660952de.jpg&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>            动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://e.hiphotos.baidu.com/album/w%3D2048/sign=7101844ef2deb48ffb69a6dec4273b29/960a304e251f95ca5d338c99c8177f3e660952de.jpg&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>            动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>
+</span><span class='line'>   <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://f.hiphotos.baidu.com/album/w%3D2048/sign=b3db417f0d3387449cc5287c6537d8f9/ac345982b2b7d0a2490b1bb2caef76094a369ada.jpg&quot;</span><span class="nt">/&gt;</span>柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://f.hiphotos.baidu.com/album/w%3D2048/sign=b3db417f0d3387449cc5287c6537d8f9/ac345982b2b7d0a2490b1bb2caef76094a369ada.jpg&quot;</span><span class="nt">/&gt;</span>柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://b.hiphotos.baidu.com/album/w%3D2048/sign=2e16e5049c16fdfad86cc1ee80b78d54/a9d3fd1f4134970ab9b70e0094cad1c8a6865ddc.jpg&quot;</span><span class="nt">/&gt;</span>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://b.hiphotos.baidu.com/album/w%3D2048/sign=2e16e5049c16fdfad86cc1ee80b78d54/a9d3fd1f4134970ab9b70e0094cad1c8a6865ddc.jpg&quot;</span><span class="nt">/&gt;</span>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://g.hiphotos.baidu.com/album/w%3D2048/sign=694cde2634fae6cd0cb4ac613b8b0e24/728da9773912b31b4e36f2388718367adab4e14d.jpg&quot;</span><span class="nt">/&gt;</span>雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://g.hiphotos.baidu.com/album/w%3D2048/sign=694cde2634fae6cd0cb4ac613b8b0e24/728da9773912b31b4e36f2388718367adab4e14d.jpg&quot;</span><span class="nt">/&gt;</span>雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天
+</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;clearfix&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>效果图</p>
+
+<p><img src="http://eve-jin.github.io/images/css_layout.png" alt="" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -757,45 +1131,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/03/html-di-si-tian/">Html 第四天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-03T00:00:00+08:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>因为明天就是清明了，所以今天放个假，我并没有安排特别的任务，只是让她自由学习。
-  虽然我这么说，但是她对程序了解不多，目前也就知道 html。所以还是主要学习了 html。<br/>
-  今天她主要是看了实例部分，并自己动手写了一些代码，看上去，她感觉挺好玩的，是的， It&#8217;s funny！<br/>
-  另外，她明天打算和朋友去玩。不带我。哼！哼！哼！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -811,6 +1146,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/22/css-bu-ju-lian-xi/">css 布局练习</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/20/hui-gu-css/">回顾CSS</a>
       </li>
     
@@ -824,10 +1163,6 @@
     
       <li class="post">
         <a href="/blog/2013/04/17/css-di-si-tian/">CSS第四天</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/17/css-di-san-tian/">css 第三天</a>
       </li>
     
   </ul>
