@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-22T23:13:20+08:00</updated>
+  <updated>2013-04-23T22:47:46+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CSS3]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/23/css3/"/>
+    <updated>2013-04-23T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/23/css3</id>
+    <content type="html"><![CDATA[<p>今晚看了另一个CSS教程中文网站，这个就是对之前所学的CSS基础做了一个总结话语，也没有实例，个人感觉不太好，就继续看了W3C上的CSS3中的边框和背景。</p>
+
+<ul>
+<li>边框</li>
+</ul>
+
+
+<p>边框圆角设置<code>border-radius</code>，有些浏览器要另外再添加一个前缀，例如<code>-moz-border-radius</code>。边框阴影设置<code>box-shadow</code>。边框图片设置<code>border-image</code>，IE浏览器不支持该属性,<code>round</code>值为图片铺满整个边框，<code>stretch</code>值为图片拉伸填充边框区域。</p>
+
+<ul>
+<li>背景</li>
+</ul>
+
+
+<p>背景图片尺寸<code>background-size</code>,设置较简单。
+背景图片定位区域<code>background-origin</code>，可以在<code>content-box</code>,<code>padding-box</code>,<code>border-box</code>这三个不同的区域定位。
+另外还讲述了多重图片背景的设置，可以直接在<code>background-image</code>后设置两张图片链接。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[css 布局练习]]></title>

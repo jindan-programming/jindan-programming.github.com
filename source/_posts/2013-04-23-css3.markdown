@@ -1,0 +1,16 @@
+---
+layout: post
+title: CSS3
+---
+
+今晚看了另一个CSS教程中文网站，这个就是对之前所学的CSS基础做了一个总结话语，也没有实例，个人感觉不太好，就继续看了W3C上的CSS3中的边框和背景。
+
+- 边框
+
+边框圆角设置`border-radius`，有些浏览器要另外再添加一个前缀，例如`-moz-border-radius`。边框阴影设置`box-shadow`。边框图片设置`border-image`，IE浏览器不支持该属性,`round`值为图片铺满整个边框，`stretch`值为图片拉伸填充边框区域。
+
+- 背景
+
+背景图片尺寸`background-size`,设置较简单。
+背景图片定位区域`background-origin`，可以在`content-box`,`padding-box`,`border-box`这三个不同的区域定位。
+另外还讲述了多重图片背景的设置，可以直接在`background-image`后设置两张图片链接。
