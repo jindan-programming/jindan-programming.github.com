@@ -9,7 +9,16 @@
   <meta name="author" content="jindan and BF">
 
   
-  <meta name="description" content="今晚看了另一个CSS教程中文网站，这个就是对之前所学的CSS基础做了一个总结话语，也没有实例，个人感觉不太好，就继续看了W3C上的CSS3中的边框和背景。 边框 边框圆角设置border-radius，有些浏览器要另外再添加一个前缀，例如-moz-border-radius。边框阴影设置box- &hellip;">
+  <meta name="description" content="今天把CSS3中的最后几点内容看完了，包括：
+- 文本效果
+- 字体
+- 2D转换
+- 3D转换
+- 过渡
+- 动画
+- 多列
+- 用户界面
+文本效果增加两个新特性，text-shadow文本阴影，IE浏览器不支持该属性，通过设定水平阴影、垂直阴影、模糊距离以及颜色来实现效果。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +74,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/25/css3-di-er-tian/">CSS3第二天</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-25T00:00:00+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天把CSS3中的最后几点内容看完了，包括：
+- 文本效果
+- 字体
+- 2D转换
+- 3D转换
+- 过渡
+- 动画
+- 多列
+- 用户界面
+文本效果增加两个新特性，<code>text-shadow</code>文本阴影，IE浏览器不支持该属性，通过设定水平阴影、垂直阴影、模糊距离以及颜色来实现效果。
+还有一个属性是<code>word-wrap</code>对长单词进行分割并换到下一行。</p>
+
+<p>CSS3之前只能用计算机上已有的字体对元素字体进行设置，CSS3中可以使用任何您喜欢的字体，只需将它存放到web服务器上，它会自动下载，属性<code>@font-face</code>，在这个规则中，首先要定义字体的名称，然后指向该字体的链接。</p>
+
+<p>2D转换，属性<code>transform</code> ,有<code>translate</code>,<code>rotate</code>,<code>scale</code>,<code>skew</code>,<code>matrix</code>五种转换方法。
+3D转换，属性也是一样，可以在X轴或Y轴两个方向对元素进行设定转换。<code>transform</code>:向2D或者3D转换，<code>transorm-origin</code>:允许改变被转换元素的位置，<code>tansform-style</code>:规定被嵌套元素如何在3D空间中显示，<code>perspective</code>:规定3D元素的透视效果，<code>perspective-origin</code>:规定3D元素的底部位置，<code>backface-visibility</code>:定义元素在不面对屏幕时是否可见。IE和Opera浏览器不支持3D转换。</p>
+
+<p>过渡<code>transition</code>，这个要规定两项内容：效果添加到哪个属性上和效果的时长。</p>
+
+<p>动画创建需要捆绑到一个选择器上，设置动画名称和时长的属性是<code>animation</code>，<code>@keyframes</code>规则用于创建动画。</p>
+
+<p>CSS3中可以将文本设置成多列，主要通过<code>column-count</code>,<code>column-gap</code>,<code>column-rule</code>三个属性来设置，第一个是设置文本的列数，第二个是设置列之间的间隔，最后一个设置列之间的宽度、样式和颜色。IE浏览器不支持这三个属性。</p>
+
+<p>用户界面也有三个属性：
+- resize 规定是否可由用户调整元素尺寸
+- box-sizing 允许您以确切的方式定义适应某个区域的具体内容
+- outline-offset 对轮廓进行偏移，并在超出边框边缘的位置绘制轮廓
+轮廓与边框有两点不同：轮廓不占用空间，可能是非矩形。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1031,42 +1103,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/08/css-di-yi-tian/">CSS第一天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-08T00:00:00+08:00" pubdate data-updated="true">Apr 8<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>之前把html基础大概的了解了一下，今天开始学习CSS，心情不太好，工作不顺心，死货又惹我生气，所以也没怎么学习，就粗略地看了一下基础教程中的语法、派生选择器、id选择器、类选择器，感觉比html的要复杂，明天调整好心情再学习一遍。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1082,6 +1118,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/25/css3-di-er-tian/">CSS3第二天</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/23/css3/">CSS3</a>
       </li>
     
@@ -1095,10 +1135,6 @@
     
       <li class="post">
         <a href="/blog/2013/04/19/css-ding-wei/">CSS定位</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/18/css-di-yi-ci-zuo-ye/">CSS第一次作业</a>
       </li>
     
   </ul>
