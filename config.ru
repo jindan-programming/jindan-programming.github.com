@@ -1,14 +1,14 @@
 require 'bundler/setup'
 require 'sinatra/base'
 require 'sanitize'
+require 'octopress/ui'
 
 # The project root directory
 $root = ::File.dirname(__FILE__)
-require File.join($root, 'ui')
 
 class SinatraStaticServer < Sinatra::Base
+  use Octopress::Ui::UIServer
 
-  use UIServer
   #get '/admin' do
     #erb :index
   #end

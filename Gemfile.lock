@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:zlx/octopress-ui.git
+  revision: 46575b57a7d0a6bac45a63fe6c3d131ee8b907aa
+  specs:
+    octopress-ui (0.0.1)
+      ruby-pinyin
+      sinatra
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -60,6 +68,7 @@ DEPENDENCIES
   haml (~> 3.1.7)
   jekyll (~> 0.12)
   liquid (~> 2.3.0)
+  octopress-ui!
   pygments.rb (~> 0.3.4)
   rack (~> 1.4.1)
   rake (~> 0.9)

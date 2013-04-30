@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-04-25T22:44:57+08:00</updated>
+  <updated>2013-04-30T14:28:36+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[测试一下]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/30/ce-shi-yi-xia/"/>
+    <updated>2013-04-30T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/30/ce-shi-yi-xia</id>
+    <content type="html"><![CDATA[<p>测试一下发布</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[测试]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/04/30/ce-shi/"/>
+    <updated>2013-04-30T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/04/30/ce-shi</id>
+    <content type="html"><![CDATA[<p>测试 gem 使用</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CSS3第二天]]></title>
