@@ -5,12 +5,25 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>金丹的程序之路</title>
+  <title>用CSS制作照片墙 - 金丹的程序之路</title>
   <meta name="author" content="jindan and BF">
 
   
-  <meta name="description" content="这篇博客是我用来反省的。 过去一个多礼拜，由于我一直忙于自己的工作，没有太多时间花在教授女友学习程序上面，导致学习进展缓慢。 接下来，我要好好安排时间，保证规律的学习时间和合理的难度。 目标：程序媛养成，进发
-">
+  <meta name="description" content="今天要求用 css 实现一个照片墙的效果，主要利用了 css3 里面的 transform ，绝对定位和背景图片的区域定位background-origin属性，位置的话还是自己大致估计的，大概位置跟原图差不多。 code: 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +32,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jindan-programming.github.com">
+  <link rel="canonical" href="http://jindan-programming.github.com/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="金丹的程序之路" type="application/atom+xml">
@@ -64,57 +77,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/05/18/bao-qian/">抱歉</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-18T18:27:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>这篇博客是我用来反省的。</p>
-
-<p>过去一个多礼拜，由于我一直忙于自己的工作，没有太多时间花在教授女友学习程序上面，导致学习进展缓慢。</p>
-
-<p>接下来，我要好好安排时间，保证规律的学习时间和合理的难度。</p>
-
-<p>目标：程序媛养成，进发</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/">用CSS制作照片墙</a></h1>
+      <h1 class="entry-title">用CSS制作照片墙</h1>
     
     
       <p class="meta">
@@ -137,7 +105,7 @@
   </header>
 
 
-  <div class="entry-content"><p>今天要求用 css 实现一个照片墙的效果，主要利用了 css3 里面的 <code>transform</code> ，绝对定位和背景图片的区域定位<code>background-origin</code>属性，位置的话还是自己大致估计的，大概位置跟原图差不多。</p>
+<div class="entry-content"><p>今天要求用 css 实现一个照片墙的效果，主要利用了 css3 里面的 <code>transform</code> ，绝对定位和背景图片的区域定位<code>background-origin</code>属性，位置的话还是自己大致估计的，大概位置跟原图差不多。</p>
 
 <p><img src="http://eve-jin.github.io/images/photo_wall.png" alt="photo wall" /></p>
 
@@ -672,205 +640,16 @@
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/05/clock-demo/">Clock Demo</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">jindan and BF</span></span>
 
-<time datetime="2013-05-05T00:00:00+08:00" pubdate data-updated="true">May 5<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天要求用 css 实现一个石英钟的效果，主要利用了 css3 里面的 <code>transform</code> 属性，效果看上去很赞。</p>
-
-<p><img src="http://eve-jin.github.io/images/clock_demo.png" alt="clock demo" /></p>
-
-<p>code:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
-</span><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'><span class="nt">&lt;style&gt;</span>
-</span><span class='line'><span class="nf">#clock</span> <span class="p">{</span>
-</span><span class='line'> <span class="k">background</span><span class="o">:</span> <span class="sx">url(&quot;clockface.jpg&quot;)</span><span class="p">;</span>
-</span><span class='line'> <span class="k">width</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">height</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">position</span><span class="o">:</span><span class="k">relative</span><span class="p">;</span>
-</span><span class='line'> <span class="k">left</span><span class="o">:</span><span class="m">500px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">top</span><span class="o">:</span><span class="m">100px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="m">400px</span> <span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background-repeat</span><span class="o">:</span><span class="k">no-repeat</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nf">#hou</span> <span class="p">{</span>
-</span><span class='line'> <span class="k">background</span><span class="o">:</span><span class="sx">url(&quot;hourhand.png&quot;)</span><span class="p">;</span>
-</span><span class='line'> <span class="k">width</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">height</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="m">20px</span> <span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background-repeat</span><span class="o">:</span><span class="k">no-repeat</span><span class="p">;</span>
-</span><span class='line'> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'> <span class="k">left</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
-</span><span class='line'> <span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">115</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">115</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">115</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">115</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">115</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nf">#min</span> <span class="p">{</span>
-</span><span class='line'> <span class="k">background</span><span class="o">:</span><span class="sx">url(&quot;minhand.png&quot;)</span><span class="p">;</span>
-</span><span class='line'> <span class="k">width</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">height</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="m">20px</span> <span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background-repeat</span><span class="o">:</span><span class="k">no-repeat</span><span class="p">;</span>
-</span><span class='line'> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'> <span class="k">left</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">z-index</span><span class="o">:</span><span class="m">2</span><span class="p">;</span>
-</span><span class='line'> <span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">-57</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">-57</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">-57</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">-57</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">-57</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nf">#sec</span> <span class="p">{</span>
-</span><span class='line'> <span class="k">background</span><span class="o">:</span><span class="sx">url(&quot;sechand.png&quot;)</span><span class="p">;</span>
-</span><span class='line'> <span class="k">width</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">height</span><span class="o">:</span><span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span><span class="m">20px</span> <span class="m">400px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">background-repeat</span><span class="o">:</span><span class="k">no-repeat</span><span class="p">;</span>
-</span><span class='line'> <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'> <span class="k">left</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
-</span><span class='line'> <span class="k">z-index</span><span class="o">:</span><span class="m">3</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'> <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/style&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;clock&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'> <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#39;hou&#39;</span><span class="nt">&gt;&lt;/span&gt;</span>
-</span><span class='line'> <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#39;min&#39;</span><span class="nt">&gt;&lt;/span&gt;</span>
-</span><span class='line'> <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#39;sec&#39;</span><span class="nt">&gt;&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/25/css3-di-er-tian/">CSS3第二天</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -882,702 +661,34 @@
   
 
 
-<time datetime="2013-04-25T00:00:00+08:00" pubdate data-updated="true">Apr 25<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天把CSS3中的最后几点内容看完了，包括：
-- 文本效果
-- 字体
-- 2D转换
-- 3D转换
-- 过渡
-- 动画
-- 多列
-- 用户界面
-文本效果增加两个新特性，<code>text-shadow</code>文本阴影，IE浏览器不支持该属性，通过设定水平阴影、垂直阴影、模糊距离以及颜色来实现效果。
-还有一个属性是<code>word-wrap</code>对长单词进行分割并换到下一行。</p>
-
-<p>CSS3之前只能用计算机上已有的字体对元素字体进行设置，CSS3中可以使用任何您喜欢的字体，只需将它存放到web服务器上，它会自动下载，属性<code>@font-face</code>，在这个规则中，首先要定义字体的名称，然后指向该字体的链接。</p>
-
-<p>2D转换，属性<code>transform</code> ,有<code>translate</code>,<code>rotate</code>,<code>scale</code>,<code>skew</code>,<code>matrix</code>五种转换方法。
-3D转换，属性也是一样，可以在X轴或Y轴两个方向对元素进行设定转换。<code>transform</code>:向2D或者3D转换，<code>transorm-origin</code>:允许改变被转换元素的位置，<code>tansform-style</code>:规定被嵌套元素如何在3D空间中显示，<code>perspective</code>:规定3D元素的透视效果，<code>perspective-origin</code>:规定3D元素的底部位置，<code>backface-visibility</code>:定义元素在不面对屏幕时是否可见。IE和Opera浏览器不支持3D转换。</p>
-
-<p>过渡<code>transition</code>，这个要规定两项内容：效果添加到哪个属性上和效果的时长。</p>
-
-<p>动画创建需要捆绑到一个选择器上，设置动画名称和时长的属性是<code>animation</code>，<code>@keyframes</code>规则用于创建动画。</p>
-
-<p>CSS3中可以将文本设置成多列，主要通过<code>column-count</code>,<code>column-gap</code>,<code>column-rule</code>三个属性来设置，第一个是设置文本的列数，第二个是设置列之间的间隔，最后一个设置列之间的宽度、样式和颜色。IE浏览器不支持这三个属性。</p>
-
-<p>用户界面也有三个属性：
-- resize 规定是否可由用户调整元素尺寸
-- box-sizing 允许您以确切的方式定义适应某个区域的具体内容
-- outline-offset 对轮廓进行偏移，并在超出边框边缘的位置绘制轮廓
-轮廓与边框有两点不同：轮廓不占用空间，可能是非矩形。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-05-06T00:00:00+08:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
       
-  <header>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/23/css3/">CSS3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+      <div class="sharing">
   
-
-
-<time datetime="2013-04-23T00:00:00+08:00" pubdate data-updated="true">Apr 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今晚看了另一个CSS教程中文网站，这个就是对之前所学的CSS基础做了一个总结话语，也没有实例，个人感觉不太好，就继续看了W3C上的CSS3中的边框和背景。</p>
-
-<ul>
-<li>边框</li>
-</ul>
-
-
-<p>边框圆角设置<code>border-radius</code>，有些浏览器要另外再添加一个前缀，例如<code>-moz-border-radius</code>。边框阴影设置<code>box-shadow</code>。边框图片设置<code>border-image</code>，IE浏览器不支持该属性,<code>round</code>值为图片铺满整个边框，<code>stretch</code>值为图片拉伸填充边框区域。</p>
-
-<ul>
-<li>背景</li>
-</ul>
-
-
-<p>背景图片尺寸<code>background-size</code>,设置较简单。
-背景图片定位区域<code>background-origin</code>，可以在<code>content-box</code>,<code>padding-box</code>,<code>border-box</code>这三个不同的区域定位。
-另外还讲述了多重图片背景的设置，可以直接在<code>background-image</code>后设置两张图片链接。</p>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jindan-programming.github.com/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/" data-via="" data-counturl="http://jindan-programming.github.com/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/22/css-bu-ju-lian-xi/">Css 布局练习</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-22T00:00:00+08:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天对昨天学习的布局进行了一个练习。</p>
-
-<p>代码如下：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-<span class='line-number'>78</span>
-<span class='line-number'>79</span>
-<span class='line-number'>80</span>
-<span class='line-number'>81</span>
-<span class='line-number'>82</span>
-<span class='line-number'>83</span>
-<span class='line-number'>84</span>
-<span class='line-number'>85</span>
-<span class='line-number'>86</span>
-<span class='line-number'>87</span>
-<span class='line-number'>88</span>
-<span class='line-number'>89</span>
-<span class='line-number'>90</span>
-<span class='line-number'>91</span>
-<span class='line-number'>92</span>
-<span class='line-number'>93</span>
-<span class='line-number'>94</span>
-<span class='line-number'>95</span>
-<span class='line-number'>96</span>
-<span class='line-number'>97</span>
-<span class='line-number'>98</span>
-<span class='line-number'>99</span>
-<span class='line-number'>100</span>
-<span class='line-number'>101</span>
-<span class='line-number'>102</span>
-<span class='line-number'>103</span>
-<span class='line-number'>104</span>
-<span class='line-number'>105</span>
-<span class='line-number'>106</span>
-<span class='line-number'>107</span>
-<span class='line-number'>108</span>
-<span class='line-number'>109</span>
-<span class='line-number'>110</span>
-<span class='line-number'>111</span>
-<span class='line-number'>112</span>
-<span class='line-number'>113</span>
-<span class='line-number'>114</span>
-<span class='line-number'>115</span>
-<span class='line-number'>116</span>
-<span class='line-number'>117</span>
-<span class='line-number'>118</span>
-<span class='line-number'>119</span>
-<span class='line-number'>120</span>
-<span class='line-number'>121</span>
-<span class='line-number'>122</span>
-<span class='line-number'>123</span>
-<span class='line-number'>124</span>
-<span class='line-number'>125</span>
-<span class='line-number'>126</span>
-<span class='line-number'>127</span>
-<span class='line-number'>128</span>
-<span class='line-number'>129</span>
-<span class='line-number'>130</span>
-<span class='line-number'>131</span>
-<span class='line-number'>132</span>
-<span class='line-number'>133</span>
-<span class='line-number'>134</span>
-<span class='line-number'>135</span>
-<span class='line-number'>136</span>
-<span class='line-number'>137</span>
-<span class='line-number'>138</span>
-<span class='line-number'>139</span>
-<span class='line-number'>140</span>
-<span class='line-number'>141</span>
-<span class='line-number'>142</span>
-<span class='line-number'>143</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">header</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">word-spacing</span><span class="o">:</span><span class="m">5px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="m">#c9d7e4</span> <span class="k">solid</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">font</span><span class="o">:</span><span class="n">Sans</span><span class="o">-</span><span class="k">serif</span> <span class="m">10px</span><span class="p">;</span>
-</span><span class='line'> <span class="p">}</span>
-</span><span class='line'><span class="nt">header</span> <span class="nt">span</span><span class="nc">.first</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="m">4</span><span class="n">c4c4c</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">header</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="m">4</span><span class="n">c4c4c</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.left</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.left1</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">190px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.left2</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">240px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.left3</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">320px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.left4</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">left</span><span class="o">:</span><span class="m">370px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.right</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">40px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.right</span> <span class="nt">a</span><span class="nc">.right1</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">50px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.right2</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">110px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">a</span><span class="nc">.right3</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">right</span><span class="o">:</span><span class="m">160px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">div</span><span class="nc">.img</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">80</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">50px</span> <span class="k">auto</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nc">.box</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">20</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">margin-right</span><span class="o">:</span><span class="m">5</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="m">#c9d7e4</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
-</span><span class='line'>     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
-</span><span class='line'>          <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nc">.box</span> <span class="nt">a</span> <span class="nt">img</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nc">.clearfix</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/style&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'><span class="nt">&lt;header&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;first&#39;</span><span class="nt">&gt;</span>CMS6BEY<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;left&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left1&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>首页<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left2&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>所有宝贝<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left3&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>社区<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;left4&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>关于我们<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;right&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right1&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>git登录<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right2&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>登录<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&#39;right3&#39;</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>注册<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'><span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/header&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;img&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://e.hiphotos.baidu.com/album/w%3D2048/sign=7101844ef2deb48ffb69a6dec4273b29/960a304e251f95ca5d338c99c8177f3e660952de.jpg&quot;</span><span class="nt">/&gt;</span>
-</span><span class='line'>            动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://e.hiphotos.baidu.com/album/w%3D2048/sign=7101844ef2deb48ffb69a6dec4273b29/960a304e251f95ca5d338c99c8177f3e660952de.jpg&quot;</span><span class="nt">/&gt;</span>
-</span><span class='line'>            动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫动漫
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>
-</span><span class='line'>   <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://f.hiphotos.baidu.com/album/w%3D2048/sign=b3db417f0d3387449cc5287c6537d8f9/ac345982b2b7d0a2490b1bb2caef76094a369ada.jpg&quot;</span><span class="nt">/&gt;</span>柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://f.hiphotos.baidu.com/album/w%3D2048/sign=b3db417f0d3387449cc5287c6537d8f9/ac345982b2b7d0a2490b1bb2caef76094a369ada.jpg&quot;</span><span class="nt">/&gt;</span>柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南柯南
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://b.hiphotos.baidu.com/album/w%3D2048/sign=2e16e5049c16fdfad86cc1ee80b78d54/a9d3fd1f4134970ab9b70e0094cad1c8a6865ddc.jpg&quot;</span><span class="nt">/&gt;</span>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://b.hiphotos.baidu.com/album/w%3D2048/sign=2e16e5049c16fdfad86cc1ee80b78d54/a9d3fd1f4134970ab9b70e0094cad1c8a6865ddc.jpg&quot;</span><span class="nt">/&gt;</span>猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫猫
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://g.hiphotos.baidu.com/album/w%3D2048/sign=694cde2634fae6cd0cb4ac613b8b0e24/728da9773912b31b4e36f2388718367adab4e14d.jpg&quot;</span><span class="nt">/&gt;</span>雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://g.hiphotos.baidu.com/album/w%3D2048/sign=694cde2634fae6cd0cb4ac613b8b0e24/728da9773912b31b4e36f2388718367adab4e14d.jpg&quot;</span><span class="nt">/&gt;</span>雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天雨天
-</span><span class='line'>    <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;clearfix&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>效果图</p>
-
-<p><img src="http://eve-jin.github.io/images/css_layout.png" alt="" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2013/05/05/clock-demo/" title="Previous Post: clock demo">&laquo; clock demo</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/20/hui-gu-css/">回顾CSS</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-20T00:00:00+08:00" pubdate data-updated="true">Apr 20<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天白天身体有点不适，一直没心情学习，但又不想因此中断进程，晚上花了半个小时回顾了一下CSS布局，另外找了一个新的教程，这里面对每一个属性每一个值都解释得非常详细，很不错的一个网站！复习的主要内容就是昨晚学的定位和浮动，还有整体的大概布局，今天状态不好，决定早点休息。某些人都在念叨念叨了，说我十几页还要分两次看，无视他！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/19/css-ding-wei/">CSS定位</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-19T00:00:00+08:00" pubdate data-updated="true">Apr 19<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>  今天学习了CSS定位模块，有四大position属性值：static、relative、absolute、fixed。static和relative较容易理解，前者是默认值，后面是相对原来位置的一个定位。absolute 是绝对定位，其参数是寻找上一级已定位的父元素，没有的话就参照 body，fixed 是以 body 为参数的。<br/><br/>
-  还学习了处理元素内容显示方式，属性是 overflow，滚动值是 scroll，隐藏是 hidden，自动是 auto。元素形状的设置是用属性 clip。垂直排列图像的属性是 vertical-align.<br/><br/>
-  另外还学习了浮动 float，在同一行内若有两个元素都像同一方向浮动，后面的在碰到前面元素框时会自动排列在后面，不会覆盖前者，其他未浮动的元素如果要设置成不挨着浮动框的话，可以使用clear属性。值可以是 left、right、both、none 这四种。<br/><br/>
-  以上是今天所学的大致知识内容，有点小累了</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment right" href="/blog/2013/05/18/bao-qian/" title="Next Post: 抱歉">抱歉 &raquo;</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/18/css-di-yi-ci-zuo-ye/">CSS第一次作业</a></h1>
-    
-    
-      <p class="meta">
-        
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-18T00:00:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>前几天学习了CSS的一点基础教程，今天祝同学给我布置了一个作业，按照一个截图写出它的效果，一开始自己写的乱七八糟，后经过某些人的指导进行改进（鼠标移到表头上的时候背景颜色改变，只对th下的这个情况进行设置就可以，因为th中的元素是一个链接，字体进行改变就要单独对a进行设置，原本下面一块红色的元素是用p设置的，后发现p有很多默认值，比如边距等，就改为div，这个默认值非常少，比较自由。div下面的本是一个个单独单词，这样如果有好几个单词是一个整体的话设间距就很麻烦，修改后采用span，对span设置边距或设置两者间的间距，最后一个span进行特殊设置。）下面就是我的作业：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">th</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">black</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">div</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">yellow</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">735px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.first</span> <span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">16px</span><span class="p">;}</span>
-</span><span class='line'><span class="nc">.text-container</span> <span class="nt">span</span> <span class="p">{</span><span class="k">margin-right</span><span class="o">:</span><span class="m">80px</span><span class="p">;}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.last</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/style&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'><span class="nt">&lt;table&gt;</span>
-</span><span class='line'><span class="nt">&lt;tr&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Front Page<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Mac Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>iOS Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Roundups<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Buyer&#39;s Guide<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Forums<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
-</span><span class='line'><span class="nt">&lt;/table&gt;</span>
-</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;text-container&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;first&quot;</span><span class="nt">&gt;</span>Register<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>FAQ/Rules<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Community<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Forum Spy<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;last&quot;</span><span class="nt">&gt;</span>Today<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>效果图:</p>
-
-<p><img src="http://eve-jin.github.io/images/demo.png" alt="demo.png" /></p>
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/17/css-di-si-tian/">CSS第四天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-17T00:00:00+08:00" pubdate data-updated="true">Apr 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天学习了CSS框模型概述，内边距，边框。
-内边距属性<code>padding</code>,可以按照上、右、下、左的顺序设置各边内边距，可以使用不同单位（px、em、ex）或百分比值。上内边距<code>padding-top</code>
-右内边距<code>padding-right</code>  下内边距<code>padding-bottom</code>  左内边距<code>padding-left</code><br/>
-边框元素<code>border</code>  ：学习了如何设置边框样式<code>border-style</code>, 边框颜色<code>border-color</code>,边框宽度<code>border-width</code>，上右下左边框的样式、颜色、宽度可以分别设置，跟内边距的设置类似，在设置颜色和宽度之前必须先设置边框样式，否则后面两者都无法显示，因为没有样式就是没有边框。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <!--
@@ -1596,7 +707,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-&#8211;!>
+--!>
 <style>
 	.highlighted-calendar-day
 	{
@@ -1802,7 +913,7 @@ $(document).ready(function(){
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/eve-jin">@eve-jin</a> on GitHub
@@ -1831,6 +942,7 @@ $(document).ready(function(){
 
   
 </aside>
+
 
     </div>
   </div>

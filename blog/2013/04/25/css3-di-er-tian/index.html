@@ -170,7 +170,7 @@
         <a class="basic-alignment left" href="/blog/2013/04/23/css3/" title="Previous Post: CSS3">&laquo; CSS3</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/04/30/ce-shi/" title="Next Post: 测试">测试 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/05/05/clock-demo/" title="Next Post: clock demo">clock demo &raquo;</a>
       
     </p>
   </footer>
@@ -180,16 +180,200 @@
 
 <aside class="sidebar">
   
-    <section>
+    <!--
+    Calendar aside/plugin for octopress blogging framework.
+    Copyright (C) 2012  Neeraj Kumar ( neerajpkumar@gmail.com, neerajkumar@outlook.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+--!>
+<style>
+	.highlighted-calendar-day
+	{
+		color : #CCC;
+		font-weight : bold;
+	}
+	
+	.calendar-header-day{
+		font-weight : bold;
+		color : #AAA;
+		font-size : 14px;
+	}
+	
+	.highlighted-calendar-day a
+	{
+		
+	}
+	
+	.prev-link
+	{
+		float:left;
+	}
+	
+	.next-link
+	{
+		float: right;
+	}
+	.calendar-day
+	{
+		color : #888;
+		font-weight : 12px;
+	}
+	
+	.calendar-table
+	{
+		width : 100%;
+		
+	}
+	
+	.calendar-table td
+	{
+		border-right : dotted 1px lightgrey;
+		text-align : center;
+	}
+	
+	.calendar-table td:last-child
+	{
+		border-right : none;
+	}
+	
+	.calendar-table th
+	{
+		background-color : lightgrey;
+		text-align : center;
+	}
+	.prevCalendarLink img
+	{	
+		
+		width : 20px;
+		height : 20px;
+		border: 0px;
+		float: left;
+		
+	}
+	
+	.nextCalendarLink img
+	{
+		
+		width : 20px;
+		height: 20px;
+		border: 0px;
+		float: right;
+		
+	}
+</style>
+<script type="text/javascript" src="/javascripts/calendar.js"></script>
+<section id="calendarDiv">
+	<span style="display:block" id="calendarSpan"></span>
+	<div>
+		<a href="#" class="previousMonth show"/><a href="#" class="nextMonth hide"/>
+	</div>
+</section>
+<script type="text/javascript">
+  
+monthCalendar = function(id,year,month)
+{
+  var highlightArray = new Array();
+  var hightlightLinks = new Array();
+  
+  highlightArray.push('05/18/2013');
+  hightlightLinks.push('/blog/2013/05/18/bao-qian/');
+  
+  highlightArray.push('05/06/2013');
+  hightlightLinks.push('/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/');
+  
+  highlightArray.push('05/05/2013');
+  hightlightLinks.push('/blog/2013/05/05/clock-demo/');
+  
+  highlightArray.push('04/25/2013');
+  hightlightLinks.push('/blog/2013/04/25/css3-di-er-tian/');
+  
+  highlightArray.push('04/23/2013');
+  hightlightLinks.push('/blog/2013/04/23/css3/');
+  
+  highlightArray.push('04/22/2013');
+  hightlightLinks.push('/blog/2013/04/22/css-bu-ju-lian-xi/');
+  
+  highlightArray.push('04/20/2013');
+  hightlightLinks.push('/blog/2013/04/20/hui-gu-css/');
+  
+  highlightArray.push('04/19/2013');
+  hightlightLinks.push('/blog/2013/04/19/css-ding-wei/');
+  		
+  var cal = new Calendar(month,year,highlightArray,hightlightLinks);
+  cal.generateHTML(id);
+  var element = document.getElementById(id);
+  element.innerHTML = cal.getHTML();
+}
+	
+loadCalendar = function(){
+  var now = new Date();
+  var month = now.getMonth();
+  var year = now.getFullYear();
+  monthCalendar('calendarDiv',year,month);
+}
+	
+	if(Array.prototype.indexOf == undefined)
+	{
+		 Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+			"use strict";
+			if (this == null) {
+				throw new TypeError();
+			}
+			var t = Object(this);
+			var len = t.length >>> 0;
+			if (len === 0) {
+				return -1;
+			}
+			var n = 0;
+			if (arguments.length > 0) {
+				n = Number(arguments[1]);
+				if (n != n) { // shortcut for verifying if it's NaN
+					n = 0;
+				} else if (n != 0 && n != Infinity && n != -Infinity) {
+					n = (n > 0 || -1) * Math.floor(Math.abs(n));
+				}
+			}
+			if (n >= len) {
+				return -1;
+			}
+			var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+			for (; k < len; k++) {
+				if (k in t && t[k] === searchElement) {
+					return k;
+				}
+			}
+			return -1;
+		}
+	}
+$(document).ready(function(){
+  loadCalendar();
+});
+</script>
+<section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/04/30/ce-shi-yi-xia/">测试一下</a>
+        <a href="/blog/2013/05/18/bao-qian/">抱歉</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/04/30/ce-shi/">测试</a>
+        <a href="/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/">用CSS制作照片墙</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/05/clock-demo/">clock demo</a>
       </li>
     
       <li class="post">
@@ -204,11 +388,45 @@
         <a href="/blog/2013/04/22/css-bu-ju-lian-xi/">css 布局练习</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2013/04/20/hui-gu-css/">回顾CSS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/19/css-ding-wei/">CSS定位</a>
+      </li>
+    
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/eve-jin">@eve-jin</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-
+        github.showRepos({
+            user: 'eve-jin',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
   
