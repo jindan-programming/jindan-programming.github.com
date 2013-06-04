@@ -9,7 +9,7 @@
   <meta name="author" content="jindan and BF">
 
   
-  <meta name="description" content="今天要求用 css 实现一个照片墙的效果，主要利用了 css3 里面的 transform ，绝对定位和背景图片的区域定位background-origin属性，位置的话还是自己大致估计的，大概位置跟原图差不多。 code: 1
+  <meta name="description" content="一个月没有学习了，前段时间非常懒散，差点放弃程序了，后来实在无法忍受自己的无所事事，试着再坚持学习，今天用CSS做了一个链接在鼠标未移上去时隐藏的效果，虽然效果做出来了，可其实是祝同学做的，我折腾好几天都没折腾出来，有点小失落，看不来祝同学 code: 1
 2
 3
 4
@@ -18,12 +18,7 @@
 7
 8
 9
-10
-11
-12
-13
-14
-15 &hellip;">
+10 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +74,433 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/04/zhong-xin-chu-fa-css/">重新出发-CSS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T00:00:00+08:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一个月没有学习了，前段时间非常懒散，差点放弃程序了，后来实在无法忍受自己的无所事事，试着再坚持学习，今天用CSS做了一个链接在鼠标未移上去时隐藏的效果，虽然效果做出来了，可其实是祝同学做的，我折腾好几天都没折腾出来，有点小失落，看不来祝同学</p>
+
+<p>code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;style&gt;</span>
+</span><span class='line'><span class="nt">div</span><span class="nf">#img</span> <span class="p">{</span>
+</span><span class='line'>   <span class="k">width</span><span class="o">:</span><span class="m">500px</span><span class="p">;</span>
+</span><span class='line'>   <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">20px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#texts</span><span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="nf">#texts</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">440px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">140px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;img&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&#39;snow_off.jpg&#39;</span> <span class="nt">/&gt;</span> 
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>    
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;isp&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;texts&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>snow white<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;sleepy&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;sleepy1&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>sleepy<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/04/zhong-xin-chu-fa/">重新出发</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T00:00:00+08:00" pubdate data-updated="true">Jun 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一个月没有学习了，前段时间非常懒散，差点放弃程序了，后来实在无法忍受自己的无所事事，试着再坚持学习，今天用CSS做了一个链接在鼠标未移上去时隐藏的效果，虽然效果做出来了，可其实是祝同学做的，我折腾好几天都没折腾出来，有点小失落，看不来祝同学
+code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;style&gt;</span>
+</span><span class='line'><span class="nt">div</span><span class="nf">#img</span> <span class="p">{</span>
+</span><span class='line'>   <span class="k">width</span><span class="o">:</span><span class="m">500px</span><span class="p">;</span>
+</span><span class='line'>   <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">20px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#texts</span><span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="nf">#texts</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">440px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">140px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;img&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&#39;snow_off.jpg&#39;</span> <span class="nt">/&gt;</span> 
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>    
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;isp&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;texts&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>snow white<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;sleepy&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;sleepy1&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>sleepy<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/18/bao-qian/">抱歉</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-18T18:27:00+08:00" pubdate data-updated="true">May 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这篇博客是我用来反省的。</p>
+
+<p>过去一个多礼拜，由于我一直忙于自己的工作，没有太多时间花在教授女友学习程序上面，导致学习进展缓慢。</p>
+
+<p>接下来，我要好好安排时间，保证规律的学习时间和合理的难度。</p>
+
+<p>目标：程序媛养成，进发</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1353,248 +1775,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/18/css-di-yi-ci-zuo-ye/">CSS第一次作业</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-18T00:00:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>前几天学习了CSS的一点基础教程，今天祝同学给我布置了一个作业，按照一个截图写出它的效果，一开始自己写的乱七八糟，后经过某些人的指导进行改进（鼠标移到表头上的时候背景颜色改变，只对th下的这个情况进行设置就可以，因为th中的元素是一个链接，字体进行改变就要单独对a进行设置，原本下面一块红色的元素是用p设置的，后发现p有很多默认值，比如边距等，就改为div，这个默认值非常少，比较自由。div下面的本是一个个单独单词，这样如果有好几个单词是一个整体的话设间距就很麻烦，修改后采用span，对span设置边距或设置两者间的间距，最后一个span进行特殊设置。）下面就是我的作业：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">th</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">th</span> <span class="nt">a</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">black</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">div</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">yellow</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">735px</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.first</span> <span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">16px</span><span class="p">;}</span>
-</span><span class='line'><span class="nc">.text-container</span> <span class="nt">span</span> <span class="p">{</span><span class="k">margin-right</span><span class="o">:</span><span class="m">80px</span><span class="p">;}</span>
-</span><span class='line'><span class="nt">span</span><span class="nc">.last</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/style&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'><span class="nt">&lt;table&gt;</span>
-</span><span class='line'><span class="nt">&lt;tr&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Front Page<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Mac Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>iOS Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Roundups<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Buyer&#39;s Guide<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Forums<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
-</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
-</span><span class='line'><span class="nt">&lt;/table&gt;</span>
-</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;text-container&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;first&quot;</span><span class="nt">&gt;</span>Register<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>FAQ/Rules<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Community<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Forum Spy<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;last&quot;</span><span class="nt">&gt;</span>Today<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>效果图:</p>
-
-<p><img src="http://eve-jin.github.io/images/demo.png" alt="demo.png" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/17/css-di-si-tian/">CSS第四天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-17T00:00:00+08:00" pubdate data-updated="true">Apr 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天学习了CSS框模型概述，内边距，边框。
-内边距属性<code>padding</code>,可以按照上、右、下、左的顺序设置各边内边距，可以使用不同单位（px、em、ex）或百分比值。上内边距<code>padding-top</code>
-右内边距<code>padding-right</code>  下内边距<code>padding-bottom</code>  左内边距<code>padding-left</code><br/>
-边框元素<code>border</code>  ：学习了如何设置边框样式<code>border-style</code>, 边框颜色<code>border-color</code>,边框宽度<code>border-width</code>，上右下左边框的样式、颜色、宽度可以分别设置，跟内边距的设置类似，在设置颜色和宽度之前必须先设置边框样式，否则后面两者都无法显示，因为没有样式就是没有边框。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/17/css-di-san-tian/">Css 第三天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-17T00:00:00+08:00" pubdate data-updated="true">Apr 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>中间间断了几天，今天开始继续学习 css。</p>
-
-<p>今天主要研究了以下几块内容：</p>
-
-<ul>
-<li><code>background</code> 背景</li>
-<li><code>text</code> 文本</li>
-<li><code>font</code> 字体</li>
-<li><code>list</code> 列表</li>
-<li><code>table</code> 如何设置表格样式</li>
-<li><code>outline</code> 轮廓</li>
-<li>框模型概述</li>
-</ul>
-
-
-<p>css 总体上要比 html 复杂许多，有更多的东西需要记忆。
-有时候我们自己会懈怠，不想继续，但是，坚持往往是通向成功的唯一途径。</p>
-
-<p>come on！ 丹丹</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1605,9 +1785,201 @@
 </div>
 <aside class="sidebar">
   
-    <section>
+    <!--
+    Calendar aside/plugin for octopress blogging framework.
+    Copyright (C) 2012  Neeraj Kumar ( neerajpkumar@gmail.com, neerajkumar@outlook.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+&#8211;!>
+<style>
+	.highlighted-calendar-day
+	{
+		color : #CCC;
+		font-weight : bold;
+	}
+	
+	.calendar-header-day{
+		font-weight : bold;
+		color : #AAA;
+		font-size : 14px;
+	}
+	
+	.highlighted-calendar-day a
+	{
+		
+	}
+	
+	.prev-link
+	{
+		float:left;
+	}
+	
+	.next-link
+	{
+		float: right;
+	}
+	.calendar-day
+	{
+		color : #888;
+		font-weight : 12px;
+	}
+	
+	.calendar-table
+	{
+		width : 100%;
+		
+	}
+	
+	.calendar-table td
+	{
+		border-right : dotted 1px lightgrey;
+		text-align : center;
+	}
+	
+	.calendar-table td:last-child
+	{
+		border-right : none;
+	}
+	
+	.calendar-table th
+	{
+		background-color : lightgrey;
+		text-align : center;
+	}
+	.prevCalendarLink img
+	{	
+		
+		width : 20px;
+		height : 20px;
+		border: 0px;
+		float: left;
+		
+	}
+	
+	.nextCalendarLink img
+	{
+		
+		width : 20px;
+		height: 20px;
+		border: 0px;
+		float: right;
+		
+	}
+</style>
+<script type="text/javascript" src="/javascripts/calendar.js"></script>
+<section id="calendarDiv">
+	<span style="display:block" id="calendarSpan"></span>
+	<div>
+		<a href="#" class="previousMonth show"/><a href="#" class="nextMonth hide"/>
+	</div>
+</section>
+<script type="text/javascript">
+  
+monthCalendar = function(id,year,month)
+{
+  var highlightArray = new Array();
+  var hightlightLinks = new Array();
+  
+  highlightArray.push('06/04/2013');
+  hightlightLinks.push('/blog/2013/06/04/zhong-xin-chu-fa-css/');
+  
+  highlightArray.push('06/04/2013');
+  hightlightLinks.push('/blog/2013/06/04/zhong-xin-chu-fa/');
+  
+  highlightArray.push('05/18/2013');
+  hightlightLinks.push('/blog/2013/05/18/bao-qian/');
+  
+  highlightArray.push('05/06/2013');
+  hightlightLinks.push('/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/');
+  
+  highlightArray.push('05/05/2013');
+  hightlightLinks.push('/blog/2013/05/05/clock-demo/');
+  
+  highlightArray.push('04/25/2013');
+  hightlightLinks.push('/blog/2013/04/25/css3-di-er-tian/');
+  
+  highlightArray.push('04/23/2013');
+  hightlightLinks.push('/blog/2013/04/23/css3/');
+  
+  highlightArray.push('04/22/2013');
+  hightlightLinks.push('/blog/2013/04/22/css-bu-ju-lian-xi/');
+  		
+  var cal = new Calendar(month,year,highlightArray,hightlightLinks);
+  cal.generateHTML(id);
+  var element = document.getElementById(id);
+  element.innerHTML = cal.getHTML();
+}
+	
+loadCalendar = function(){
+  var now = new Date();
+  var month = now.getMonth();
+  var year = now.getFullYear();
+  monthCalendar('calendarDiv',year,month);
+}
+	
+	if(Array.prototype.indexOf == undefined)
+	{
+		 Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+			"use strict";
+			if (this == null) {
+				throw new TypeError();
+			}
+			var t = Object(this);
+			var len = t.length >>> 0;
+			if (len === 0) {
+				return -1;
+			}
+			var n = 0;
+			if (arguments.length > 0) {
+				n = Number(arguments[1]);
+				if (n != n) { // shortcut for verifying if it's NaN
+					n = 0;
+				} else if (n != 0 && n != Infinity && n != -Infinity) {
+					n = (n > 0 || -1) * Math.floor(Math.abs(n));
+				}
+			}
+			if (n >= len) {
+				return -1;
+			}
+			var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+			for (; k < len; k++) {
+				if (k in t && t[k] === searchElement) {
+					return k;
+				}
+			}
+			return -1;
+		}
+	}
+$(document).ready(function(){
+  loadCalendar();
+});
+</script>
+<section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/zhong-xin-chu-fa-css/">重新出发-CSS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/zhong-xin-chu-fa/">重新出发</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/18/bao-qian/">抱歉</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/05/06/yong-css-zhi-zuo-zhao-pian-qiang/">用CSS制作照片墙</a>
@@ -1632,8 +2004,34 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/eve-jin">@eve-jin</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-
+        github.showRepos({
+            user: 'eve-jin',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
   
