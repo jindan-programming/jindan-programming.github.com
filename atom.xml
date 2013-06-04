@@ -4,7 +4,7 @@
   <title><![CDATA[金丹的程序之路]]></title>
   <link href="http://jindan-programming.github.com/atom.xml" rel="self"/>
   <link href="http://jindan-programming.github.com/"/>
-  <updated>2013-05-18T18:57:44+08:00</updated>
+  <updated>2013-06-04T09:28:22+08:00</updated>
   <id>http://jindan-programming.github.com/</id>
   <author>
     <name><![CDATA[jindan and BF]]></name>
@@ -12,6 +12,172 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[重新出发-CSS]]></title>
+    <link href="http://jindan-programming.github.com/blog/2013/06/04/zhong-xin-chu-fa-css/"/>
+    <updated>2013-06-04T00:00:00+08:00</updated>
+    <id>http://jindan-programming.github.com/blog/2013/06/04/zhong-xin-chu-fa-css</id>
+    <content type="html"><![CDATA[<p>一个月没有学习了，前段时间非常懒散，差点放弃程序了，后来实在无法忍受自己的无所事事，试着再坚持学习，今天用CSS做了一个链接在鼠标未移上去时隐藏的效果，虽然效果做出来了，可其实是祝同学做的，我折腾好几天都没折腾出来，有点小失落，看不来祝同学</p>
+
+<p>code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;style&gt;</span>
+</span><span class='line'><span class="nt">div</span><span class="nf">#img</span> <span class="p">{</span>
+</span><span class='line'>   <span class="k">width</span><span class="o">:</span><span class="m">500px</span><span class="p">;</span>
+</span><span class='line'>   <span class="k">height</span><span class="o">:</span><span class="m">300px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">20px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#texts</span><span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#isp</span><span class="nd">:hover</span> <span class="nf">#texts</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">left</span><span class="o">:</span><span class="m">440px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">140px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">80px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">cursor</span><span class="o">:</span><span class="k">pointer</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span><span class="k">center</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span><span class="k">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span><span class="m">60px</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">border</span><span class="o">:</span><span class="k">solid</span> <span class="m">1px</span> <span class="nb">black</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nf">#sleepy</span><span class="nd">:hover</span> <span class="nf">#sleepy1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;img&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&#39;snow_off.jpg&#39;</span> <span class="nt">/&gt;</span> 
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>    
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;isp&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;texts&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>snow white<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;sleepy&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&#39;sleepy1&#39;</span> <span class="na">href=</span><span class="s">&#39;url&#39;</span><span class="nt">&gt;</span>sleepy<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[抱歉]]></title>
@@ -1631,88 +1797,6 @@
 <p>今天主要学习了 段落，文本格式化。了解了其基本用法。</p>
 
 <p>每日一小步，坚持就是胜利。丹丹，你是最棒的！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[第一天学习]]></title>
-    <link href="http://jindan-programming.github.com/blog/2013/03/28/di-yi-tian-xue-xi/"/>
-    <updated>2013-03-28T23:46:00+08:00</updated>
-    <id>http://jindan-programming.github.com/blog/2013/03/28/di-yi-tian-xue-xi</id>
-    <content type="html"><![CDATA[<p>今天是正式开始学习的第一天，我给她安排的任务不多，主要是学习
-<a href="http://www.w3school.com.cn/html/index.asp">w3school</a> 里面的 html
-相关课程。目的是感受一下程序是如何运行，如何编写的。 w3school
-提供了循序渐进的学习方式，并且可以马上试验效果，所以非常适合没有任何程序语言基础的女友学习。</p>
-
-<p>我给她制定了一个目标：了解 html 基本组成和语法。时间是两个小时。</p>
-
-<p>实际操作下来，她学习了三个番茄。结果了解了如何写标题，如何写段落，如何设置标题位置和背景颜色，如何在文档中插入链接，图片，如何换行，如何加横行以及如何添加注释。</p>
-
-<p>作业代码:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;body</span> <span class="na">bgcolor=</span><span class="s">&quot;green&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;h1</span> <span class="na">align=</span><span class="s">&quot;center&quot;</span><span class="nt">&gt;</span>标题一<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>hostease w3school tiy<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'><span class="nt">&lt;a</span>
-</span><span class='line'><span class="na">href=</span><span class="s">&quot;http://zhidao.baidu.com/question/326962953.html&quot;</span><span class="nt">&gt;</span>颜色english<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;h2</span> <span class="na">align=</span><span class="s">&quot;left&quot;</span><span class="nt">&gt;</span>标题二<span class="nt">&lt;/h2&gt;</span>
-</span><span class='line'><span class="nt">&lt;p&gt;</span>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<span class="nt">&lt;br/&gt;</span>
-</span><span class='line'>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<span class="nt">&lt;hr/&gt;</span>
-</span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://t3.baidu.com/it/u=382498400,157213796&amp;fm=24&amp;gp=0.jpg&quot;</span><span class="nt">/&gt;</span>
-</span><span class='line'><span class="nt">&lt;h3</span> <span class="na">align=</span><span class="s">&quot;right&quot;</span><span class="nt">&gt;</span>标题三<span class="nt">&lt;/h3&gt;</span>
-</span><span class='line'><span class="c">&lt;!--祝联新闭嘴--&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>效果图如下：</p>
-
-<p><html>
-<body bgcolor="green"></p>
-
-<h1 align="center">标题一</h1>
-
-
-<p>hostease w3school tiy</p>
-
-
-<p><a
-href="http://zhidao.baidu.com/question/326962953.html">颜色english</a></p>
-
-<h2 align="left">标题二</h2>
-
-
-<p>段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<br/>
-段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落<hr/>
-<img src="http://t3.baidu.com/it/u=382498400,157213796&fm=24&gp=0.jpg"/>
-<h3 align="right">标题三</h3>
-<!--祝联新闭嘴-->
-
-</body>
-</html>
-
 ]]></content>
   </entry>
   

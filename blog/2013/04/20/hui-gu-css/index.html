@@ -250,6 +250,9 @@ monthCalendar = function(id,year,month)
   var highlightArray = new Array();
   var hightlightLinks = new Array();
   
+  highlightArray.push('06/04/2013');
+  hightlightLinks.push('/blog/2013/06/04/zhong-xin-chu-fa-css/');
+  
   highlightArray.push('05/18/2013');
   hightlightLinks.push('/blog/2013/05/18/bao-qian/');
   
@@ -270,9 +273,6 @@ monthCalendar = function(id,year,month)
   
   highlightArray.push('04/20/2013');
   hightlightLinks.push('/blog/2013/04/20/hui-gu-css/');
-  
-  highlightArray.push('04/19/2013');
-  hightlightLinks.push('/blog/2013/04/19/css-ding-wei/');
   		
   var cal = new Calendar(month,year,highlightArray,hightlightLinks);
   cal.generateHTML(id);
@@ -329,6 +329,10 @@ $(document).ready(function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/04/zhong-xin-chu-fa-css/">重新出发-CSS</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/18/bao-qian/">抱歉</a>
       </li>
     
@@ -354,10 +358,6 @@ $(document).ready(function(){
     
       <li class="post">
         <a href="/blog/2013/04/20/hui-gu-css/">回顾CSS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/19/css-ding-wei/">CSS定位</a>
       </li>
     
   </ul>
