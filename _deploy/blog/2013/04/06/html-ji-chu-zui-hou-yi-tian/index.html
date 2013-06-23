@@ -294,6 +294,12 @@ monthCalendar = function(id,year,month)
   var highlightArray = new Array();
   var hightlightLinks = new Array();
   
+  highlightArray.push('06/24/2013');
+  hightlightLinks.push('/blog/2013/06/24/css-yi-ge-ye-mian-de-jing-tai-yang-shi/');
+  
+  highlightArray.push('06/24/2013');
+  hightlightLinks.push('/blog/2013/06/24/css-yi-ge-wan-zheng-ye-mian-de-jing-tai-yang-shi/');
+  
   highlightArray.push('06/04/2013');
   hightlightLinks.push('/blog/2013/06/04/zhong-xin-chu-fa-css/');
   
@@ -311,12 +317,6 @@ monthCalendar = function(id,year,month)
   
   highlightArray.push('04/25/2013');
   hightlightLinks.push('/blog/2013/04/25/css3-di-er-tian/');
-  
-  highlightArray.push('04/23/2013');
-  hightlightLinks.push('/blog/2013/04/23/css3/');
-  
-  highlightArray.push('04/22/2013');
-  hightlightLinks.push('/blog/2013/04/22/css-bu-ju-lian-xi/');
   		
   var cal = new Calendar(month,year,highlightArray,hightlightLinks);
   cal.generateHTML(id);
@@ -373,6 +373,14 @@ $(document).ready(function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/24/css-yi-ge-ye-mian-de-jing-tai-yang-shi/">CSS一个页面的静态样式</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/24/css-yi-ge-wan-zheng-ye-mian-de-jing-tai-yang-shi/">CSS一个完整页面的静态样式</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/06/04/zhong-xin-chu-fa-css/">重新出发-CSS</a>
       </li>
     
@@ -394,14 +402,6 @@ $(document).ready(function(){
     
       <li class="post">
         <a href="/blog/2013/04/25/css3-di-er-tian/">CSS3第二天</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/23/css3/">CSS3</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/22/css-bu-ju-lian-xi/">css 布局练习</a>
       </li>
     
   </ul>

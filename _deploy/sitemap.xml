@@ -97,8 +97,20 @@
         <lastmod>2013-06-04T08:06:26+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://jindan-programming.github.com/blog/2013/06/24/css-yi-ge-wan-zheng-ye-mian-de-jing-tai-yang-shi/
+        </loc>
+        <lastmod>2013-06-24T06:19:07+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://jindan-programming.github.com/blog/2013/06/24/css-yi-ge-ye-mian-de-jing-tai-yang-shi/
+        </loc>
+        <lastmod>2013-06-24T06:20:30+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://jindan-programming.github.com/</loc>
-        <lastmod>2013-06-04T08:06:26+08:00</lastmod>
+        <lastmod>2013-06-24T06:20:30+08:00</lastmod>
     </url>
     <url>
         <loc>http://jindan-programming.github.com/robots.txt</loc>
@@ -106,6 +118,6 @@
     </url>
     <url>
         <loc>http://jindan-programming.github.com/blog/archives/</loc>
-        <lastmod>2013-06-04T08:06:26+08:00</lastmod>
+        <lastmod>2013-06-24T06:20:30+08:00</lastmod>
     </url>
 </urlset>
