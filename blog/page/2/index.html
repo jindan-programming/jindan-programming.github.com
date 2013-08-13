@@ -9,9 +9,7 @@
   <meta name="author" content="jindan and BF">
 
   
-  <meta name="description" content="今天学习了CSS框模型概述，内边距，边框。
-内边距属性padding,可以按照上、右、下、左的顺序设置各边内边距，可以使用不同单位（px、em、ex）或百分比值。上内边距padding-top
-右内边距padding-right 下内边距padding-bottom 左内边距padding- &hellip;">
+  <meta name="description" content="今天学习了CSS定位模块，有四大position属性值：static、relative、absolute、fixed。static和relative较容易理解，前者是默认值，后面是相对原来位置的一个定位。absolute 是绝对定位，其参数是寻找上一级已定位的父元素，没有的话就参照 body， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +65,194 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/19/css-ding-wei/">CSS定位</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-19T00:00:00+08:00" pubdate data-updated="true">Apr 19<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>  今天学习了CSS定位模块，有四大position属性值：static、relative、absolute、fixed。static和relative较容易理解，前者是默认值，后面是相对原来位置的一个定位。absolute 是绝对定位，其参数是寻找上一级已定位的父元素，没有的话就参照 body，fixed 是以 body 为参数的。<br/><br/>
+  还学习了处理元素内容显示方式，属性是 overflow，滚动值是 scroll，隐藏是 hidden，自动是 auto。元素形状的设置是用属性 clip。垂直排列图像的属性是 vertical-align.<br/><br/>
+  另外还学习了浮动 float，在同一行内若有两个元素都像同一方向浮动，后面的在碰到前面元素框时会自动排列在后面，不会覆盖前者，其他未浮动的元素如果要设置成不挨着浮动框的话，可以使用clear属性。值可以是 left、right、both、none 这四种。<br/><br/>
+  以上是今天所学的大致知识内容，有点小累了</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/18/css-di-yi-ci-zuo-ye/">CSS第一次作业</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T00:00:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前几天学习了CSS的一点基础教程，今天祝同学给我布置了一个作业，按照一个截图写出它的效果，一开始自己写的乱七八糟，后经过某些人的指导进行改进（鼠标移到表头上的时候背景颜色改变，只对th下的这个情况进行设置就可以，因为th中的元素是一个链接，字体进行改变就要单独对a进行设置，原本下面一块红色的元素是用p设置的，后发现p有很多默认值，比如边距等，就改为div，这个默认值非常少，比较自由。div下面的本是一个个单独单词，这样如果有好几个单词是一个整体的话设间距就很麻烦，修改后采用span，对span设置边距或设置两者间的间距，最后一个span进行特殊设置。）下面就是我的作业：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">th</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">120px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span><span class="m">2px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">th</span><span class="nd">:hover</span> <span class="nt">a</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">white</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">th</span> <span class="nt">a</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span><span class="nb">black</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-decoration</span><span class="o">:</span><span class="k">none</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">div</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background-color</span><span class="o">:</span><span class="nb">yellow</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span><span class="m">735px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nt">span</span><span class="nc">.first</span> <span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">16px</span><span class="p">;}</span>
+</span><span class='line'><span class="nc">.text-container</span> <span class="nt">span</span> <span class="p">{</span><span class="k">margin-right</span><span class="o">:</span><span class="m">80px</span><span class="p">;}</span>
+</span><span class='line'><span class="nt">span</span><span class="nc">.last</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'><span class="nt">&lt;table&gt;</span>
+</span><span class='line'><span class="nt">&lt;tr&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Front Page<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Mac Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>iOS Blog<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Roundups<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Buyer&#39;s Guide<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'> <span class="nt">&lt;th&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>Forums<span class="nt">&lt;/a&gt;&lt;/th&gt;</span>
+</span><span class='line'><span class="nt">&lt;/tr&gt;</span>
+</span><span class='line'><span class="nt">&lt;/table&gt;</span>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;text-container&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;first&quot;</span><span class="nt">&gt;</span>Register<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span>FAQ/Rules<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Community<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span>Forum Spy<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;last&quot;</span><span class="nt">&gt;</span>Today<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>效果图:</p>
+
+<p><img src="http://eve-jin.github.io/images/demo.png" alt="demo.png" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -644,100 +830,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/01/html-xue-xi/">HTML 学习</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-01T22:59:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天继续学习 html。</p>
-
-<p>今天主要学习了以下几块</p>
-
-<ul>
-<li>格式化</li>
-<li>编辑器</li>
-<li>样式</li>
-<li>链接</li>
-<li>图像</li>
-<li>表格</li>
-</ul>
-
-
-<p>其中图像中对位置变动，静动态图片，图像映射印象深刻</p>
-
-<p>关于表格，如何写表头，表格，单个表单元，合并单元，嵌套表格</p>
-
-<p>明天重点要看布局和表单，然后需要进行一些测验。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/29/htmlxue-xi/">Html学习</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-29T23:12:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天我状态不好，所以原本打算休息一天。但是她非常好学，很自觉地继续学习。</p>
-
-<p>今天主要学习了 段落，文本格式化。了解了其基本用法。</p>
-
-<p>每日一小步，坚持就是胜利。丹丹，你是最棒的！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -856,6 +948,12 @@ monthCalendar = function(id,year,month)
   var highlightArray = new Array();
   var hightlightLinks = new Array();
   
+  highlightArray.push('06/30/2013');
+  hightlightLinks.push('/blog/2013/06/30/css-zui-hou-yi-tian/');
+  
+  highlightArray.push('06/24/2013');
+  hightlightLinks.push('/blog/2013/06/24/css-yi-ge-ye-mian-de-jing-tai-yang-shi/');
+  
   highlightArray.push('06/04/2013');
   hightlightLinks.push('/blog/2013/06/04/zhong-xin-chu-fa-css/');
   
@@ -873,12 +971,6 @@ monthCalendar = function(id,year,month)
   
   highlightArray.push('04/23/2013');
   hightlightLinks.push('/blog/2013/04/23/css3/');
-  
-  highlightArray.push('04/22/2013');
-  hightlightLinks.push('/blog/2013/04/22/css-bu-ju-lian-xi/');
-  
-  highlightArray.push('04/20/2013');
-  hightlightLinks.push('/blog/2013/04/20/hui-gu-css/');
   		
   var cal = new Calendar(month,year,highlightArray,hightlightLinks);
   cal.generateHTML(id);
@@ -935,6 +1027,14 @@ $(document).ready(function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/30/css-zui-hou-yi-tian/">CSS最后一天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/24/css-yi-ge-ye-mian-de-jing-tai-yang-shi/">CSS一个页面的静态样式</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/06/04/zhong-xin-chu-fa-css/">重新出发-CSS</a>
       </li>
     
@@ -956,14 +1056,6 @@ $(document).ready(function(){
     
       <li class="post">
         <a href="/blog/2013/04/23/css3/">CSS3</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/22/css-bu-ju-lian-xi/">css 布局练习</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/20/hui-gu-css/">回顾CSS</a>
       </li>
     
   </ul>
