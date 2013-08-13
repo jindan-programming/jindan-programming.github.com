@@ -9,10 +9,10 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<link href="stylesheets/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="javascripts/jquery.js"></script>
-	<script type="text/javascript" src="javascripts/garden.js"></script>
-    <script type="text/javascript" src="jaascripts/functions.js"></script>
+  <link href="../stylesheets/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="../javascripts/jquery.js"></script>
+	<script type="text/javascript" src="../javascripts/garden.js"></script>
+    <script type="text/javascript" src="../javascripts/functions.js"></script>
 </head>
 
 <body>
@@ -23,8 +23,8 @@
 				<span class="space"/><span class="comments">* 新新和丹丹认识于游埠高中,</span><br />
 				<span class="space"/><span class="comments">* 他们在那里有一段很快乐的时光.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"新新"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"丹丹"</span>);<br />
+				i = Boy.<span class="keyword">new</span>(<span class="string">"新新"</span>);<br />
+				u = Girl.<span class="keyword">new</span>(<span class="string">"丹丹"</span>);<br />
 				<span class="comments">// 3 11, 2013 新新对丹丹说，我想照顾你一辈子. </span><br />
 				i.love(u);<br />
 				<span class="comments">// 很幸运，丹丹很羞涩地答应了.</span><br />
@@ -32,20 +32,20 @@
 				<span class="comments">// 从此, 他们很恩爱地生活在一起.</span><br />
 				i.miss(u);<br />
 				<span class="comments">// 新新和照顾丹丹，丹丹也很依赖新新.</span><br />
-				i.takeCareOf(u);<br />
-                                u.rely_on(i);<br />
-				<span class="comments">// 丹丹说不会那么容易嫁给新新新，老妈不允许.</span><br />
+				i.take_care_of(u);<br />
+        u.rely_on(i);<br />
+				<span class="comments">// 丹丹说不会那么容易嫁给新新，老妈不允许.</span><br />
 				<span class="comments">// 但是新新不放弃，一直坚持.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
+				is_hesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (is_hesitate) {<br />
+				<span class="placeholder"/>i.wait_for(u);<br />
 				<span class="placeholder"/><span class="comments">// 在这个重要的日子里，是时候了</span><br />
 				<span class="placeholder"/><span class="comments">// 新新大声对丹丹说 "嫁给俺吧".</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				<span class="placeholder"/>is_hesitate = u.think_over();<br />
 				}<br />
 				<span class="comments">// 在经过一段告白之后，从此新新与丹丹幸福地生活在一起了.</span><br />
 				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				i.live_happily_with(u);<br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -66,7 +66,7 @@
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2013, 1, 2);
+		together.setFullYear(2012, 12, 24);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
